@@ -217,8 +217,8 @@
             <div> <img  width="354" height="233" src="assests/images/galler2.jpeg" alt="png"></div>
             <div> <img  width="281" height="274" src="assests/images/gallery3.JPG" alt="png"></div>
             <div> <img  width="230" height="204" src="assests/images/gallery4.jpeg" alt="png"></div>
-            <div> <img  width="136" height="270" src="assests/images/gallery5.JPG" alt="png"></div>
-            <div> <img  width="200" height="270" src="assests/images/gallery6.jpeg" alt="png"></div>
+            <div> <img  width="240" height="270" src="assests/images/gallery5.JPG" alt="png"></div>
+            <div> <img  width="150" height="290" src="assests/images/gallery6.jpeg" alt="png"></div>
             <div> <img  width="320" height="230" src="assests/images/gallery7.jpeg" alt="png"></div>
             <div> <video width="150"  src="assests/video/myPicVideo.mp4" controls autoplay loop muted></video></div>
         </section>
@@ -259,7 +259,27 @@
 
     <section>
         <address>
-            <form>
+            <form id="UserForm">
+                <fieldset>
+                    <legend><h4>Send Me An Email</h4></legend>
+                    <!--user Name-->
+                    <label for="txtName">Name</label>
+                    <input UserName="Name" id="txtName" type="text" placeholder="Name">
+                    <br>
+                    <br>
+
+                    <!--email-->
+                    <label for="txtEmail">Email</label>
+                    <input name="Address" id="txtEmail" type="email" placeholder="Email">
+                    <br>
+                    <br>
+                    <!--massage-->
+                    <label for="txtMassage">Massage</label>
+                    <input UserMassage="Massage" id="txtMassage" type="text" placeholder="Massage">
+                    <br>
+                    <br>
+                    <button form="UserForm" type="submit" formaction="Send_Massage">Send_Massage</button>
+                </fieldset>
 
             </form>
 
