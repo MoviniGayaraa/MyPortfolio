@@ -264,27 +264,25 @@
                     <legend><h4>Send Me An Email</h4></legend>
                     <!--user Name-->
                     <label for="txtName">Name</label>
-                    <input UserName="Name" id="txtName" type="text" placeholder="Name">
+                    <input UserName="Name" id="txtName" type="text" placeholder="Name" required>
                     <br>
                     <br>
 
                     <!--email-->
                     <label for="txtEmail">Email</label>
-                    <input name="Address" id="txtEmail" type="email" placeholder="Email">
+                    <input name="Email" id="txtEmail" type="email" placeholder="Email" required>
                     <br>
                     <br>
                     <!--massage-->
                     <label for="txtMassage">Massage</label>
-                    <input UserMassage="Massage" id="txtMassage" type="text" placeholder="Massage">
+                   <!-- <input UserMassage="Massage" id="txtMassage" type="text" placeholder="Massage"> -->
+                    <textarea name="Massage" id="txtMassage" cols="20" rows="2"></textarea>
                     <br>
                     <br>
                     <button  type="submit" formaction="Send_Massage">Send_Massage</button>
-
                 </fieldset>
             </form>
-
         </address>
-
     </section>
 
 </footer>
