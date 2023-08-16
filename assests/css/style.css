@@ -11,25 +11,4 @@ button:active{
     background: orange;
 }
 
-main>section:nth-child(3)>section:nth-child(1)>div:nth-child(1) {
-    width: 400px;
-    height: 300px;
-    border: 1px solid black;
-    margin-left: 450px;
-    margin-top: 100px;
-}
-main>section:nth-child(3)>section:nth-child(1)>div:nth-child(2) {
-    width: 400px;
-    height: 300px;
-    border: 1px solid black;
-    margin-left: 300px;
-    margin-top: 100px;
-}
-main>section:nth-child(3)>section:nth-child(1)>div:nth-child(3) {
-    width: 400px;
-    height: 300px;
-    border: 1px solid black;
-    margin-left: 150px;
-    margin-top: 100px;
-}
 
