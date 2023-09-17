@@ -1,14 +1,909 @@
-h1{
-   color: black;
-   font-size: 38px;
-    font-family:semi bold;
-}
 
-a:visited{
-    color: red;
-}
+/*a:visited{*/
+/*    color:orange;*/
+/*}*/
+
 button:active{
     background: orange;
 }
+*{
+    /*padding: 0;*/
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    list-style: none;
+    /*font-family: Calibri;*/
+
+}
+
+
+
+
+
+<!-- heder---------------------------------------------------------------------------------------------------->
+
+span{
+    color: orangered;
+}
+.nav1{
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    padding-left: 20px;
+    background-color:black;
+}
+ul{
+    display: flex;
+}
+nav>h2{
+    color: white;
+}
+header>nav>ul>li>a{
+    font-size: 17px;
+    margin: 40px;
+    color: white;
+}
+<!-- home-->
+     main>section:nth-child(1){
+         width: 100vw;
+         height: 95vh;
+         position: relative;
+         background-color:deeppink;
+     }
+
+
+main>section:nth-child(1)>div:nth-child(1){
+    width: 100vw;
+    height: 80vh;
+}
+
+main>section:nth-child(1)>div:nth-child(1)>img{
+    width: 100vw;
+    height: 90vh;
+}
+
+
+
+main>section:nth-child(1)>div:nth-child(2){
+    width: 73.33vw;
+    height: 80vh;
+    padding-left: 13.33vw;
+    padding-right: 13.33vw;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+
+
+main>section:nth-child(1)>div:nth-child(2)>h2{
+    font-family: Inter, SansSerif;
+    font-weight: 900;
+    color: #0A0A0A;
+    font-size: 2.5vw;
+    padding-left: 1.1vw;
+
+    position: absolute;
+    top: 21.5vh;
+    margin: auto;
+}
+
+main>section:nth-child(1)>div:nth-child(2)>h3{
+    font-family: 'Catamaran';
+    font-size: 4.5vw;
+    font-weight: 900;
+    color: #0A0A0A;
+    padding-left: 1vw;
+
+    position: absolute;
+    top: 30vh;
+    margin: auto;
+}
+
+main>section:nth-child(1)>div:nth-child(2)>h4{
+    font-family: 'Catamaran';
+    font-size: 4.5vw;
+    font-weight: 900;
+    color: orange;
+    padding-left: 15vw;
+
+
+    position: absolute;
+    top: 30vh;
+    margin: auto;
+}
+
+main>section:nth-child(1)>div:nth-child(2)>div{
+    width: 3.8vw;
+    height: 1.5vh;
+    background-color: orange;
+    border-radius: 1vh;
+    box-shadow: orange 0px 4px 12px;
+
+    position: absolute;
+    top: 40vh;
+    left: 16.5vw;
+    margin: auto;
+}
+
+main>section:nth-child(1)>div:nth-child(2)>h5{
+    font-family: 'Catamaran';
+    font-size: 1.2vw;
+    font-weight: 600;
+    color: #0A0A0A;
+    padding-left: 1.5vw;
+
+    position: absolute;
+    top: 46vh;
+    margin: auto;
+}
+
+main>section:nth-child(1)>div:nth-child(2)>p{
+    width: 25vw;
+    font-family: Inter, SansSerif;
+    font-weight: 200;
+    color: #0A0A0A;
+    font-size: 0.9vw;
+    padding-left: 1.5vw;
+
+    position: absolute;
+    top: 49vh;
+    margin: auto;
+}
+
+main>section:nth-child(1)>div:nth-child(2)>h6{
+    font-family: Inter, SansSerif;
+    font-weight: 600;
+    color: white;
+    font-size: 0.8vw;
+    padding: 0.7vw;
+    background-color: orange;
+    border-radius: 8px;
+    box-shadow: orange 0px 4px 12px;
+
+    position: absolute;
+    top: 58vh;
+    left: 15vw;
+    margin: auto;
+}
+
+main>section:nth-child(1)>div:nth-child(2)>h6:hover{
+    background-color: orange;
+    box-shadow: orange 0px 4px 12px;
+}
+
+
+
+#myImage{
+    position: absolute;
+    height: 75%;
+    width: 30%;
+    padding-right: 13.33vw;
+    padding-top: 10vh;
+
+    position: absolute;
+    right: 0;
+    margin: auto;
+}
+
+
+
+#linkedIn{
+    width: 3%;
+    position: absolute;
+    left: 23vw;
+    top: 59.5vh;
+    margin: auto;
+}
+
+#instergram{
+    width: 3%;
+    position: absolute;
+    left: 26vw;
+    top: 59.5vh;
+    margin: auto;
+}
+
+#facebook{
+    width: 3%;
+    position: absolute;
+    left: 30vw;
+    top: 59.5vh;
+    margin: auto;
+}
+
+
+
+
+#logo{
+    width: 4%;
+    position: absolute;
+    left: 7vw;
+    top: 82vh;
+    margin: auto;
+}
+
+
+
+
+
+
+<!-- aboutMe------------------------------------------------------------------------------------------------------>
+
+
+     main>section:nth-child(2){
+         position: relative;
+         height: 100vh;
+         width: 72vw;
+         padding-left: 14vw;
+         padding-right: 14vw;
+    background-color: orange;
+     }
+
+
+#section4MyImage1{
+    width: 18vw;
+    height: 30vh;
+
+    position: absolute;
+    top: 56vh;
+    left: 29vw;
+    margin: auto;
+    z-index: 1;
+}
+
+#section4MyImage2{
+    width: 148px;
+    height:257px;
+    position: absolute;
+    left:30vw;
+    top: 96vh;
+    margin: auto;
+}
+
+
+
+main>section:nth-child(2)>div{
+    height: 55vh;
+    width: 35vw;
+
+    position: absolute;
+    top: 96vh;
+    right: 14vw;
+    margin: auto;
+}
+
+main>section:nth-child(2)>div>h5{
+    width: 12vw;
+    font-family: Inter, SansSerif;
+    font-size: 1vw;
+    font-weight: 600;
+    color: orange;
+    margin: 0;
+}
+
+main>section:nth-child(2)>div>h1{
+    width: 25vw;
+    font-family: 'Catamaran';
+    font-size: 3vw;
+    font-weight: 700;
+    color: #0A0A0A;
+
+    position: absolute;
+    top: 4vh;
+    margin: auto;
+}
+
+main>section:nth-child(2)>div>h3{
+    width: 34vw;
+    font-family: Inter, SansSerif;
+    font-size: 1.2vw;
+    font-weight: 300;
+    color: #808080;
+    position: absolute;
+    top: 21vh;
+    margin: auto;
+}
+
+main>section:nth-child(2)>div>img{
+    width: 40vw;
+    position: absolute;
+    top: 43vh;
+    margin: auto;
+}
+
+<!-- skills------------------------------------------------------------------------------------------------->
+
+     main>section:nth-child(3){
+         position: relative;
+         height: 110vh;
+         width: 72vw;
+         padding-left: 14vw;
+         padding-right: 14vw;
+         background-color: #E6F3F4;
+     }
+
+main>section:nth-child(3)>h5{
+    width: 2.5vw;
+    font-family: Inter, SansSerif;
+    font-size: 1vw;
+    font-weight: 600;
+    color: orange;
+
+    position: absolute;
+    top: 195vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+main>section:nth-child(3)>h1{
+    width: 15vw;
+    font-family: 'Catamaran';
+    font-size: 3vw;
+    font-weight: 700;
+    color: #0A0A0A;
+
+    position: absolute;
+    top: 197vh;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+<!-- Languages  tools-->
+
+     main>section:nth-child(3)>section{
+         position: relative;
+         height: 33vh;
+         width: 72vw;
+         padding-left: 14vw;
+         padding-right: 14vw;
+     }
+
+main>section:nth-child(3)>section>h5{
+    width: 5.5vw;
+    font-family: Inter, SansSerif;
+    font-size: 2vw;
+    font-weight: 600;
+    color: orange;
+
+    position: absolute;
+    top: 305vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+main>section:nth-child(3)>section>h1{
+    width: 19vw;
+    font-family: 'Catamaran';
+    font-size: 3vw;
+    font-weight: 700;
+    color: #0A0A0A;
+
+    position: absolute;
+    top: 306vh;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+main>section:nth-child(3)>section>img{
+    width: 5%;
+    position: absolute;
+    top: 326vh;
+    margin: auto;
+    border: black;
+}
+
+main>section:nth-child(3)>section>img:hover{
+    width: 6%;
+}
+
+
+
+#javaLogo{
+    right: 0;
+    left: 0;
+}
+
+#sqlLogo{
+    right: 0vw;
+    left: 15vw;
+}
+
+#jsLogo{
+    border-radius: 15%;
+    right: 15vw;
+    left: 0vw;
+}
+
+#cssLogo{
+    right: 0vw;
+    left: 30vw;
+}
+
+#htmlLogo{
+    right: 30vw;
+    left: 0vw;
+}
+
+#figmaLogo{
+    right: 0vw;
+    left: 45vw;
+}
+
+#inteligLogo{
+    right: 45vw;
+    left: 0vw;
+}
+
+#arduinoLogo{
+    right: 0vw;
+    left: 60vw;
+}
+
+#hibernateLogo{
+    right: 60vw;
+    left: 0vw;
+}
+
+<!-- expertice------------------------------------------------------------------------------------------------------------------------->
+
+main>section:nth-child(4){
+         position: relative;
+         height: 140vh;
+         width: 72vw;
+         padding-left: 14vw;
+         padding-right: 14vw;
+     }
+
+main>section:nth-child(4)>h5{
+    width: 7vw;
+    font-family: Inter, SansSerif;
+    font-size: 1vw;
+    font-weight: 600;
+    color: orange;
+
+    position: absolute;
+    top: 347vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+main>section:nth-child(4)>h1{
+    width: 14vw;
+    font-family: 'Catamaran';
+    font-size: 1vw;
+    font-weight: 600;
+    color: #0A0A0A;
+
+    position: absolute;
+    top: 348vh;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+
+
+main>section:nth-child(4)>div{
+    width: 23.5vw;
+    height: 40vh;
+    background-color: white;
+    box-shadow: #D0D0D0 0px 4px 12px;
+    border-radius: 1vh;
+
+    position: absolute;
+    margin: auto;
+}
+
+main>section:nth-child(4)>div:hover{
+    box-shadow: #959393 0px 4px 12px;
+}
+
+
+
+main>section:nth-child(4)>div>h4{
+    font-family: 'Catamaran';
+    font-size: 1.5vw;
+    font-weight: 700;
+    color: #0A0A0A;
+
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 15vh;
+    margin: auto;
+}
+
+main>section:nth-child(4)>div>h3{
+    width: 20vw;
+    font-family: Inter, SansSerif;
+    font-size: 1vw;
+    font-weight: 600;
+    text-align: center;
+    color: #808080;
+
+    position: absolute;
+    top: 21vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+
+
+#box1{
+    top: 372vh;
+    left: 14vw;
+}
+
+#box1>img{
+    width: 20%;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 4vh;
+    margin: auto;
+}
+
+
+
+
+
+#box2{
+    top: 372vh;
+    right: 0;
+    left: 0;
+}
+
+#box2>img{
+    width: 18%;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 4.8vh;
+    margin: auto;
+}
+
+
+
+
+
+#box3{
+    top: 372vh;
+    right: 14vw;
+}
+
+#box3>img{
+    width: 20%;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 4vh;
+    margin: auto;
+}
+
+
+
+
+
+
+<!-- portfolio-->
+
+main>     section:nth-child(5){
+         position: relative;
+         height: 120vh;
+         width: 72vw;
+         padding-left: 14vw;
+         padding-right: 14vw;
+         overflow: hidden;
+     }
+
+main>  section:nth-child(5)>h5{
+    width: 5.5vw;
+    font-family: Inter, SansSerif;
+    font-size: 1vw;
+    font-weight: 600;
+    color: orange;
+
+    position: absolute;
+    top: 430vh;
+    right:0;
+    left: 0;
+    margin: auto;
+}
+
+main>  section:nth-child(5)>h1{
+    width: 20vw;
+    font-family: 'Catamaran';
+    font-size: 3vw;
+    font-weight: 700;
+    color: #0A0A0A;
+
+    position: absolute;
+    right:0;
+    left: 0;
+    top: 435vh;
+    margin: auto;
+}
+
+main>  section:nth-child(5)>h2{
+    width: 19vw;
+    font-family: 'Catamaran';
+    font-size: 3.5vw;
+    font-weight: 700;
+    color: #0A0A0A;
+
+    position: absolute;
+    top: 20vh;
+    right: 15vw;
+    margin: auto;
+}
+
+main>  section:nth-child(5)>h3{
+    width: 19vw;
+    font-family: 'Catamaran';
+    font-size: 3.5vw;
+    font-weight: 700;
+    color: #0A0A0A;
+
+    position: absolute;
+    top: 20vh;
+    right: 5vw;
+    margin: auto;
+}
+
+main>  section:nth-child(5)>h4{
+    width: 8vw;
+    font-family: Inter, SansSerif;
+    font-size: 0.8vw;
+    font-weight: 600;
+    color: #0A0A0A;
+
+    position: absolute;
+    top: 27vh;
+    right: 28vw;
+    margin: auto;
+}
+
+main>  section:nth-child(5)>h6{
+    width: 8vw;
+    font-family: Inter, SansSerif;
+    font-size: 0.8vw;
+    font-weight: 600;
+    color: #0A0A0A;
+
+    position: absolute;
+    top: 27vh;
+    right: 16vw;
+    margin: auto;
+}
+
+main>  section:nth-child(5)>div{
+    width: 0.07vw;
+    height: 6vh;
+    background-color: #0A0A0A;
+
+    position: absolute;
+    top: 425vh;
+    right: 26.5vw;
+    margin: auto;
+}
+
+#section7Project1{
+
+    width: 23.5vw;
+    height: 40vh;
+    background-color: white;
+    box-shadow: #D0D0D0 0px 4px 12px;
+    border-radius: 1vh;
+
+    position: absolute;
+    margin: auto;
+
+    top: 460vh;
+    left: 14vw;
+
+
+
+}
+
+#section7Project2{
+    width: 23.5vw;
+    height: 40vh;
+    background-color: white;
+    box-shadow: #D0D0D0 0px 4px 12px;
+    border-radius: 1vh;
+
+    position: absolute;
+    margin: auto;
+
+    top: 460vh;
+    right: 0;
+    left: 0;
+
+
+
+}
+
+#section7Project3{
+    width: 23.5vw;
+    height: 40vh;
+    background-color: white;
+    box-shadow: #D0D0D0 0px 4px 12px;
+    border-radius: 1vh;
+
+    position: absolute;
+    margin: auto;
+
+    top: 460vh;
+    right:14vw;
+
+
+}
+
+#section7LeftArrow{
+    width: 3%;
+
+    position: absolute;
+    top: 65vh;
+    left: 26vw;
+    margin: auto;
+}
+
+#section7RightArrow{
+    width: 3%;
+
+    position: absolute;
+    top: 65vh;
+    right: 26vw;
+    margin: auto;
+}
+
+main>  section:nth-child(5)>h7{
+    width: 13vw;
+    font-family: Inter, SansSerif;
+    font-size: 1vw;
+    font-weight: 600;
+    color: #0A0A0A;
+
+    position: absolute;
+
+    top: 520vh;
+    right: 0;
+    left: 0;
+    margin: auto;
+
+    background-color: orange;
+    border-radius: 8px;
+    padding: 1vh;
+    box-shadow: orange 0px 4px 12px;
+}
+
+main>  section:nth-child(5)>h7:hover{
+    background-color: orange;
+    box-shadow: orange 0px 4px 12px;
+}
+
+main>  section:nth-child(5)>h7>a {
+    color: black;
+    text-decoration: none;
+}
+
+<!-- Assignment-->
+<!--gallery-->
+
+         main  >section:nth-child(6){
+             position: relative;
+             height: 160vh;
+             width: 72vw;
+             padding-left: 14vw;
+             padding-right: 14vw;
+         }
+
+main>section:nth-child(6)>h5{
+    width: 2.5vw;
+    font-family: Inter, SansSerif;
+    font-size: 1vw;
+    font-weight: 600;
+    color: orange;
+
+    position: absolute;
+    top: 565vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+main>section:nth-child(6)>h1{
+    width: 21vw;
+    font-family: 'Catamaran';
+    font-size: 3vw;
+    font-weight: 700;
+    color: #0A0A0A;
+
+    position: absolute;
+    top: 565vh;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+main  >section:nth-child(6)>section{
+    top: 565vh;
+    width: 60vw;
+    height: 60vh;
+    left:25vw;
+    right:25vw;
+    display: grid;
+    font-size: 0;
+    position: relative;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+
+
+
+}
+main  >section:nth-child(6)>section>div:nth-child(1)>img{
+
+    background-size: cover;
+    background-position: center;
+
+}
+main  >section:nth-child(6)>section>div:nth-child(2){
+
+    background-size: cover;
+    background-position: center;
+}
+main  >section:nth-child(6)>section>div:nth-child(3){
+
+    background-size: cover;
+    background-position: center;
+}
+main  >section:nth-child(6)>section>div:nth-child(4){
+
+    background-size: cover;
+    background-position: center;
+
+}
+main  >section:nth-child(6)>section>div:nth-child(5){
+
+    background-size: cover;
+    background-position: center;
+}
+main  >section:nth-child(6)>section>div:nth-child(6){
+
+    background-size: cover;
+    background-position: center;
+}
+main  >section:nth-child(6)>section>div:nth-child(7){
+
+    background-size: cover;
+    background-position: center;
+}
+main  >section:nth-child(6)>section>div:nth-child(8){
+
+    background-size: cover;
+    background-position: center;
+}
+section>div:nth-child(9){
+
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+<!-- footer-->
 
 
