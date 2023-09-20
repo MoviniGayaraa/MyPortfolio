@@ -1,0 +1,8 @@
+footer{
+    position: relative;
+    height: 40vh;
+    width: 72vw;
+    padding-left: 14vw;
+    padding-right: 14vw;
+    background-color: black;
+}

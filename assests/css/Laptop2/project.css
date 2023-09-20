@@ -1,0 +1,24 @@
+@media all and (max-width: 1024px) and (min-width:768px){
+
+    section:nth-child(7){
+        height: 90vh;
+    }
+
+    section:nth-child(7)>h5{
+        font-size: 1.5vw;
+    }
+
+    section:nth-child(7)>h1{
+        font-size: 4vw;
+        width: 25vw;
+    }
+
+    #LeftArrow{
+        top: 58vh;
+    }
+
+    #RightArrow{
+        top: 58vh;
+    }
+
+}

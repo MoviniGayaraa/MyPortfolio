@@ -1,0 +1,63 @@
+@media all and (max-width: 425px) {
+
+    section:nth-child(5){
+        height:50vh;
+    }
+
+    section:nth-child(5)>h5{
+        width: 6.5vw;
+        font-size: 2.5vw;
+        top: 5vh;
+    }
+
+    section:nth-child(5)>h1{
+        width: 20vw;
+        font-size: 4vw;
+        top: 7vh;
+    }
+
+    section:nth-child(5)>div{
+        height: 10vh;
+    }
+
+    section:nth-child(5)>div>h3{
+        font-size: 1vw;
+        top: 6vh;
+        text-align: center;
+    }
+
+    section:nth-child(5)>div>h2{
+        font-size: 1.5vw;
+        width: 20vw;
+    }
+
+
+    #pathImg{
+        top: 20vh;
+        height: 20vh;
+    }
+
+
+    #section5Box1{
+        top: 15.5vh;
+    }
+
+    #section5Box2{
+        top: 22vh;
+    }
+
+    #section5Box3{
+        top: 28vh;
+    }
+
+    #section5Box4{
+        top: 34vh;
+    }
+
+    #graduationLogo{
+        width: 5%;
+        top: 21vh;
+        right: 12vw;
+    }
+
+}

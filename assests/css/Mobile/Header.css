@@ -1,0 +1,22 @@
+@media all and (max-width: 425px) {
+
+    header>img{
+        display: none;
+    }
+
+    header>nav{
+        position: absolute;
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
+
+    header>nav>ul>li:nth-child(7){
+        display: none;
+    }
+
+    header>nav>ul>li{
+        font-size: 8px;
+    }
+
+}

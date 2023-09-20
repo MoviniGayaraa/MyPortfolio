@@ -1,0 +1,48 @@
+@media all and (max-width: 425px) {
+
+    section:nth-child(8){
+        height: 60vh;
+    }
+
+    section:nth-child(8)>h5{
+        font-size: 2.5vw;
+        width: 5vw;
+        top: 3vh;
+    }
+
+    section:nth-child(8)>h1{
+        font-size: 5vw;
+        width: 34vw;
+        top: 5vh;
+    }
+
+    #section8Img2{
+        top: 30vh;
+    }
+
+    #section8Img4{
+        top: 19.5vh;
+    }
+
+    #section8Img6{
+        top: 38vh;
+    }
+
+    #section8Img7{
+        top: 26vh;
+    }
+
+
+    #section8Img1{
+        top: 12vh;
+    }
+
+    #section8Img3{
+        top: 12vh;
+    }
+
+    #section8Img5{
+        top: 12vh;
+    }
+
+}

@@ -1,0 +1,139 @@
+section:nth-child(7){
+    position: relative;
+    height: 120vh;
+    width: 72vw;
+    padding-left: 14vw;
+    padding-right: 14vw;
+    overflow: hidden;
+    background-color: black;
+}
+
+section:nth-child(7)>h5{
+    width: 5.5vw;
+    font-family: Inter, SansSerif;
+    font-size: 1vw;
+    font-weight: 600;
+    color: #EF7418;
+    position: absolute;
+    top: 15vh;
+    left: 14.1vw;
+    margin: auto;
+}
+section:nth-child(7)>h5:hover{
+    color: white;
+}
+
+section:nth-child(7)>h1{
+    width: 20vw;
+    font-family: 'Catamaran';
+    font-size: 3vw;
+    font-weight: 700;
+    color: white;
+
+    position: absolute;
+    top: 19vh;
+    margin: auto;
+}
+
+section:nth-child(7)>h1:hover{
+    color: #EF7418;
+}
+
+
+section:nth-child(7)>div{
+    width: 0.07vw;
+    height: 6vh;
+    background-color: black;
+
+    position: absolute;
+    top: 22vh;
+    right: 26.5vw;
+    margin: auto;
+}
+section:nth-child(7)>img:hover{
+    transform: scale(1.02);
+}
+
+/*student*/
+#Project1{
+    width: 35%;
+    box-shadow:   #434d56 0px 4px 12px;
+    position: absolute;
+    top: 45vh;
+    left: -17vw;
+    margin: auto;
+
+    opacity: 90%;
+}
+
+/*pilisaru*/
+#Project2{
+    width: 35%;
+    box-shadow:   #434d56 0px 4px 12px;
+    position: absolute;
+    top: 45vh;
+    right: -12vw;
+    margin: auto;
+
+    opacity: 80%;
+}
+
+/*pharmacy*/
+#Project3{
+    width: 35%;
+    box-shadow:   #434d56 0px 4px 12px;
+    position: absolute;
+    top: 40vh;
+    right: 0;
+    left: 0;
+    margin: auto;
+
+}
+
+
+
+#LeftArrow{
+    width: 3%;
+    box-shadow: 0 0 1rem #434d56 ;
+    position: absolute;
+    top: 65vh;
+    left: 26vw;
+    margin: auto;
+}
+
+#RightArrow{
+    width: 3%;
+    box-shadow: 0 0 1rem #434d56 ;
+    position: absolute;
+    top: 65vh;
+    right: 26vw;
+    margin: auto;
+}
+
+section:nth-child(7)>h7{
+    width: 13vw;
+    font-family: Inter, SansSerif;
+    font-size: 1vw;
+    font-weight: 600;
+    color: white;
+    position: absolute;
+    bottom: 7vh;
+    right: 0;
+    left: 0;
+    margin: auto;
+
+    background-color: #EF7418;
+    border-radius: 8px;
+    padding: 1vh;
+    box-shadow: #EF7418 0px 4px 12px;
+}
+
+section:nth-child(7)>h7:hover{
+    background-color: black;
+    box-shadow: #EF7418 0px 4px 12px;
+}
+
+section:nth-child(7)>h7>a {
+    color: white;
+    text-decoration: none;
+}

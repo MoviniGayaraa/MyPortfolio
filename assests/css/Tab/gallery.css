@@ -1,0 +1,32 @@
+@media all and (max-width: 768px) and (min-width:425px){
+
+    section:nth-child(8){
+        height: 100vh;
+    }
+
+    section:nth-child(8)>h5{
+        font-size: 1.5vw;
+    }
+
+    section:nth-child(8)>h1{
+        font-size: 4vw;
+        width: 28vw;
+    }
+
+    #section8Img2{
+        top: 57.5vh;
+    }
+
+    #section8Img4{
+        top: 42vh;
+    }
+
+    #section8Img6{
+        top: 69.5vh;
+    }
+
+    #section8Img7{
+        top: 51vh;
+    }
+
+}

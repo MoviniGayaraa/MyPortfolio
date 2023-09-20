@@ -1,0 +1,46 @@
+@media all and (max-width: 1024px) and (min-width:768px){
+
+    section:nth-child(5){
+        height: 90vh;
+    }
+
+    section:nth-child(5)>h5{
+        font-size: 1.5vw;
+    }
+
+    section:nth-child(5)>h1{
+        width: 20vw;
+        font-size: 4vw;
+    }
+
+    section:nth-child(5)>div>h2{
+        font-size: 1.3vw;
+    }
+
+    section:nth-child(5)>div>h3{
+        font-size: 1vw;
+        top: 7.5vh;
+        text-align: center;
+    }
+
+    section:nth-child(5)>div>h4{
+        top: 12vh;
+    }
+
+    #section5Box1{
+        top: 28vh;
+    }
+
+    #section5Box2{
+        top: 40vh;
+    }
+
+    #section5Box3{
+        top: 52vh;
+    }
+
+    #section5Box4{
+        top: 63vh;
+    }
+
+}

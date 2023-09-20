@@ -1,0 +1,147 @@
+section:nth-child(1){
+    width: 100vw;
+    height: 95vh;
+    position: relative;
+    background-color: black;
+
+}
+
+section:nth-child(1)>div:nth-child(2){
+    width: 73.33vw;
+    height: 80vh;
+    padding-left: 13.33vw;
+    padding-right: 13.33vw;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+
+section:nth-child(1)>div:nth-child(2)>h3{
+    font-family: 'Catamaran';
+    font-size: 4.5vw;
+    font-weight: 900;
+    color: #EF7418;
+    padding-left: 1vw;
+
+    position: absolute;
+    top: 30vh;
+    margin: auto;
+}
+
+section:nth-child(1)>div:nth-child(2)>h3:hover{
+    color: white;
+}
+
+section:nth-child(1)>div:nth-child(2)>h4{
+    font-family: 'Catamaran';
+    font-size: 4.5vw;
+    font-weight: 900;
+    color: white;
+    padding-left: 15vw;
+
+
+    position: absolute;
+    top: 30vh;
+    margin: auto;
+}
+
+section:nth-child(1)>div:nth-child(2)>h4:hover{
+    color: #EF7418;
+}
+
+section:nth-child(1)>div:nth-child(2)>h5{
+    font-family: 'Catamaran';
+    font-size: 1.2vw;
+    font-weight: 600;
+    color: white;
+    padding-left: 1.5vw;
+
+    position: absolute;
+    top: 46vh;
+    margin: auto;
+}
+section:nth-child(1)>div:nth-child(2)>h5:hover{
+    color: #EF7418;
+}
+
+section:nth-child(1)>div:nth-child(2)>p{
+    width: 25vw;
+    font-family: Inter, SansSerif;
+    font-weight: 200;
+    color: white;
+    font-size: 0.9vw;
+    padding-left: 1.5vw;
+
+    position: absolute;
+    top: 49vh;
+    margin: auto;
+}
+section:nth-child(1)>div:nth-child(2)>p:hover{
+    color: #EF7418;
+}
+
+section:nth-child(1)>div:nth-child(2)>h6{
+    font-family: Inter, SansSerif;
+    font-weight: 600;
+    color: white;
+    font-size: 0.8vw;
+    padding: 0.7vw;
+    background-color: #EF7418;
+    border-radius: 8px;
+    box-shadow: #EF7418 0px 4px 12px;
+
+    position: absolute;
+    top: 58vh;
+    left: 15vw;
+    margin: auto;
+}
+
+section:nth-child(1)>div:nth-child(2)>h6:hover{
+    background-color: black;
+    box-shadow: #EF7418 0px 4px 12px;
+}
+
+section:nth-child(1)>div>img:hover{
+    transform: scale(1.02);
+}
+
+#myImage{
+    position: absolute;
+    height: 75%;
+    width: 30%;
+    padding-right: 13.33vw;
+    padding-top: 10vh;
+
+    position: absolute;
+    right: 0;
+    margin: auto;
+}
+
+#linkedIn{
+    width: 1%;
+    position: absolute;
+    left: 23vw;
+    top: 59.5vh;
+    margin: auto;
+}
+
+#instergram{
+    width: 1%;
+    position: absolute;
+    left: 25vw;
+    top: 59.5vh;
+    margin: auto;
+}
+
+#facebook{
+    width: 1%;
+    position: absolute;
+    left: 27vw;
+    top: 59.5vh;
+    margin: auto;
+}
+

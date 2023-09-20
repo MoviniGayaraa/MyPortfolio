@@ -1,0 +1,103 @@
+section:nth-child(8){
+    position: relative;
+    height: 160vh;
+    width: 72vw;
+    padding-left: 14vw;
+    padding-right: 14vw;
+    background-color: #161a1d;
+}
+
+section:nth-child(8)>h5{
+    width: 2.5vw;
+    font-family: Inter, SansSerif;
+    font-size: 1vw;
+    font-weight: 600;
+    color: #EF7418;
+    position: absolute;
+    top: 15vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+section:nth-child(8)>h5:hover{
+    color: white;
+}
+
+section:nth-child(8)>h1{
+    width: 21vw;
+    font-family: 'Catamaran';
+    font-size: 3vw;
+    font-weight: 700;
+    color: white;
+    position: absolute;
+    top: 18vh;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+section:nth-child(8)>h1:hover{
+    color: #EF7418;
+}
+section:nth-child(8)>img:hover{
+    transform: scale(1.02);}
+
+section:nth-child(8)>video:hover{
+    transform: scale(1.02);}
+
+#section8Img1{
+    width: 23%;
+    position: absolute;
+    top: 30vh;
+    left: 14vw;
+    margin: auto;
+}
+
+#section8Img2{
+    width: 23.5%;
+    position: absolute;
+    top: 90vh;
+    left: 13.8vw;
+    margin: auto;
+}
+
+#section8Img3{
+    width: 21%;
+    position: absolute;
+    top: 29.8vh;
+    left: 37.5vw;
+    margin: auto;
+}
+
+#section8Img4{
+    width: 21%;
+    position: absolute;
+    top: 55vh;
+    left: 37.5vw;
+    margin: auto;
+}
+
+#section8Img5{
+    width: 27%;
+    position: absolute;
+    top: 30vh;
+    right: 14vw;
+    margin: auto;
+}
+
+#section8Img6{
+    width: 20.5%;
+    position: absolute;
+    top: 116vh;
+    left: 37.8vw;
+    margin: auto;
+}
+
+#section8Img7{
+    width: 27%;
+    position: absolute;
+    top: 77vh;
+    right: 14vw;
+    margin: auto;
+}

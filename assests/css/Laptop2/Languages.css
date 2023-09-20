@@ -1,0 +1,17 @@
+@media all and (max-width: 1024px) and (min-width:768px){
+
+    section:nth-child(6){
+        height: 50vh;
+    }
+
+    section:nth-child(6)>h5{
+        font-size: 1.5vw;
+        width: 8vw;
+    }
+
+    section:nth-child(6)>h1{
+        width: 25vw;
+        font-size: 4vw;
+    }
+
+}

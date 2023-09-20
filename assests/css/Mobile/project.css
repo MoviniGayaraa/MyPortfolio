@@ -1,0 +1,46 @@
+@media all and (max-width: 425px) {
+
+    section:nth-child(7){
+        height: 55vh;
+    }
+
+    section:nth-child(7)>h5{
+        top: 15vh;
+        font-size: 2.5vw;
+    }
+
+    section:nth-child(7)>h1{
+        top: 17vh;
+        font-size: 5vw;
+        width: 35vw;
+    }
+
+    section:nth-child(7)>div{
+        top : 16vh;
+        height: 7vh;
+    }
+
+    #Project1{
+        top: 30vh;
+    }
+
+    #Project2{
+        top: 30vh;
+    }
+
+    #Project3{
+        top: 28vh;
+    }
+
+    section:nth-child(7)>h7{
+        bottom: 5vh;
+    }
+
+    #LeftArrow{
+        display: none;
+    }
+
+    #RightArrow{
+        display: none;
+    }
+}

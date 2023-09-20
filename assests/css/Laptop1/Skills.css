@@ -1,0 +1,143 @@
+section:nth-child(5){
+    position: relative;
+    height: 110vh;
+    width: 72vw;
+    padding-left: 14vw;
+    padding-right: 14vw;
+    background-color: #161a1d;
+}
+
+section:nth-child(5)>h5{
+    width: 2.5vw;
+    font-family: Inter, SansSerif;
+    font-size: 1vw;
+    font-weight: 600;
+    color: #EF7418;
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+section:nth-child(5)>h5:hover{
+    color: white;
+}
+
+section:nth-child(5)>h1{
+    width: 15vw;
+    font-family: 'Catamaran';
+    font-size: 3vw;
+    font-weight: 700;
+    color: white;
+    position: absolute;
+    top: 13vh;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+section:nth-child(5)>h1:hover{
+    color: #EF7418;
+}
+
+#pathImg{
+    width: 25%;
+    position: absolute;
+    top: 35vh;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+
+section:nth-child(5)>div{
+    width: 20vw;
+    height: 15vh;
+    background-color: #EF7418;
+    background-color: black;
+    box-shadow: #434d56 0px 4px 12px;
+    border-radius: 1vh;
+}
+
+section:nth-child(5)>div:hover{
+    box-shadow: #EF7418 0px 4px 12px;
+    transform: scale(1.02);
+}
+
+section:nth-child(5)>div>h2{
+    font-family: 'Catamaran';
+    font-size: 1vw;
+    text-align: center;
+    font-weight: 700;
+    color: white;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 2.5vh;
+    margin: auto;
+}
+
+section:nth-child(5)>div>h2:hover{
+    color: #EF7418;
+}
+
+section:nth-child(5)>div>h3{
+    font-family: Inter, SansSerif;
+    font-size: 0.8vw;
+    font-weight: 600;
+    color: #808080;
+    position: absolute;
+    top: 8.5vh;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+section:nth-child(5)>div>h3:hover{
+    color: #EF7418;
+}
+
+
+section:nth-child(5)>div>h4{
+    font-family: Inter, SansSerif;
+    font-size: 0.8vw;
+    font-weight: 600;
+    color: #808080;
+    position: absolute;
+    top: 11vh;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+section:nth-child(5)>div>h4:hover{
+    color: #EF7418;
+}
+
+#section5Box1{
+    position: absolute;
+    top: 29vh;
+    left: 14vw;
+    margin: auto;
+}
+
+#section5Box2{
+    position: absolute;
+    top: 46vh;
+    right: 14vw;
+    margin: auto;
+}
+
+#section5Box3{
+    position: absolute;
+    top: 63vh;
+    left: 14vw;
+    margin: auto;
+}
+
+#section5Box4{
+    position: absolute;
+    top: 79vh;
+    right: 14vw;
+    margin: auto;
+}
+
+

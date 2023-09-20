@@ -1,0 +1,57 @@
+@media all and (max-width: 1024px) and (min-width:768px){
+
+    section:nth-child(3){
+        height: 125vh;
+    }
+
+    section:nth-child(3)>h5{
+        width: 10vw;
+        font-size: 1.5vw;
+    }
+
+    section:nth-child(3)>h1{
+        width: 18.5vw;
+        font-size: 4vw;
+    }
+
+    section:nth-child(3)>div{
+        height: 30vh;
+    }
+
+    #box1>img{
+        width: 25%;
+    }
+
+    #box2>img{
+        width: 23%;
+    }
+
+    #box3>img{
+        width: 25%;
+    }
+
+    #box4{
+        top: 56vh;
+    }
+
+    #box4>img{
+        width: 23%;
+    }
+
+    #box5{
+        top: 56vh;
+    }
+
+    #box5>img{
+        width: 21%;
+    }
+
+    #box6{
+        top: 56vh;
+    }
+
+    #box6>img{
+        width: 25%;
+    }
+
+}

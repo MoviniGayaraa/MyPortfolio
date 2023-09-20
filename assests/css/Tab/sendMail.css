@@ -1,0 +1,15 @@
+@media all and (max-width: 768px) and (min-width:425px){
+
+    section:nth-child(11){
+        height: 53vh;
+    }
+
+    section:nth-child(11)>div:nth-child(1){
+        height: 40vh;
+    }
+
+    section:nth-child(11)>div:nth-child(2){
+        height: 25vh;
+    }
+
+}

@@ -1,0 +1,153 @@
+section:nth-child(11){
+    position: relative;
+    height: 60vh;
+    width: 72vw;
+    padding-left: 14vw;
+    padding-right: 14vw;
+    background-color: black;
+}
+
+section:nth-child(11)>div:nth-child(1){
+    height: 40vh;
+    width: 72vw;
+    padding-left: 14vw;
+    padding-right: 14vw;
+    background-color: black;
+
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+section:nth-child(11)>div:nth-child(2){
+    height: 50vh;
+    width: 72vw;
+    margin-left: 14vw;
+    margin-right: 14vw;
+    border-radius: 3vh;
+    background-color: #161a1d;
+    box-shadow: #EF7418 0px 4px 12px;
+
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+section:nth-child(11)>div:nth-child(2):hover{
+    background-color: #808080;
+}
+
+section:nth-child(11)>div:nth-child(2)>h1{
+    font-family: 'Catamaran';
+    font-size: 2.5vw;
+    font-weight: 600;
+    color: white;
+    padding-left: 1vw;
+    position: absolute;
+    top: 6vh;
+    left: 3vw;
+    margin: auto;
+}
+
+section:nth-child(11)>div:nth-child(2)>h1:hover{
+    color:  #EF7418;
+}
+
+
+section:nth-child(11)>div:nth-child(2)>form{
+    position: absolute;
+    top: 18vh;
+    left: 4vw;
+    margin: auto;
+}
+
+#nameTxt, #emailTxt, #messageTxt{
+    font-family: Inter, SansSerif;
+    font-size: 1vw;
+    font-weight: 600;
+    color: white;
+}
+
+#nameTxtFld, #messageTxtFld, #emailTxtFld{
+    width: 20vw;
+    height: 3vh;
+}
+
+
+#nameTxt{
+    width : 10vw;
+
+    position: absolute;
+    top: 1vh;
+    left: 2vw;
+    margin: auto;
+}
+
+
+#emailTxt{
+    width : 10vw;
+
+    position: absolute;
+    top: 1vh;
+    left: 35vw;
+    margin: auto;
+}
+
+
+#messageTxt{
+    width : 10vw;
+
+    position: absolute;
+    top: 10vh;
+    left: 2vw;
+    margin: auto;
+}
+
+
+#nameTxtFld{
+    width : 20vw;
+
+    position: absolute;
+    top: 0.5vh;
+    left: 8.5vw;
+    margin: auto;
+}
+
+#emailTxtFld{
+    width : 23vw;
+
+    position: absolute;
+    top: 0.5vh;
+    left: 39vw;
+    margin: auto;
+}
+
+#messageTxtFld{
+    width : 54.5vw;
+    height: 10vh;
+
+    position: absolute;
+    top: 9.5vh;
+    left: 7.5vw;
+    margin: auto;
+}
+
+#btnSend{
+    width: 3vw;
+    font-family: Inter, SansSerif;
+    font-size: 1vw;
+    font-weight: 600;
+    color:black;
+
+    background-color:#EF7418;
+    border-radius: 8px;
+    padding: 1vh;
+
+    position: absolute;
+    top: 24vh;
+    left: 58vw;
+    margin: auto;
+}

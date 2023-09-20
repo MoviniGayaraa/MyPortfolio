@@ -1,0 +1,76 @@
+section:nth-child(4){
+    position: relative;
+    height: 100vh;
+    width: 72vw;
+    padding-left: 14vw;
+    padding-right: 14vw;
+    background-color: black;
+}
+
+#section4MyImage2{
+    width: 20%;
+    position: absolute;
+    top: 20vh;
+    margin: auto;
+}
+
+section:nth-child(4)>div{
+    height: 55vh;
+    width: 35vw;
+    position: absolute;
+    top: 25vh;
+    right: 14vw;
+    margin: auto;
+}
+
+section:nth-child(4)>div>h5{
+    width: 12vw;
+    font-family: Inter, SansSerif;
+    font-size: 1vw;
+    font-weight: 600;
+    color: #EF7418;
+    margin: 0;
+}
+section:nth-child(4)>div>h5:hover{
+    color: white
+}
+
+section:nth-child(4)>div>h1{
+    width: 25vw;
+    font-family: 'Catamaran';
+    font-size: 3vw;
+    font-weight: 700;
+    color: white;
+
+    position: absolute;
+    top: 4vh;
+    margin: auto;
+}
+section:nth-child(4)>div>h1:hover{
+    color: #EF7418;
+}
+
+section:nth-child(4)>div>h3{
+    width: 34vw;
+    font-family: Inter, SansSerif;
+    font-size: 1.2vw;
+    font-weight: 300;
+    color: white;
+    position: absolute;
+    top: 21vh;
+    margin: auto;
+}
+section:nth-child(4)>div>h3:hover{
+    color: #EF7418;
+}
+
+section:nth-child(4)>div>img{
+    width: 40vw;
+    position: absolute;
+    top: 43vh;
+    margin: auto;
+}
+
+section:nth-child(4)>div>img:hover{
+    transform: scale(1.02);
+}

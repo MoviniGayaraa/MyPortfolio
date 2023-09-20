@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Case_3</title>
+  <link rel="stylesheet" href="../assest/8.0.1_normalize.css">
+  <meta name="viewport" content="width=device-width initial scale=1">
+  <style>
+    img{
+      width: 400px;
+      height: 400px;
+      position: absolute;
+      margin: auto;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+    .main{
+      width: 400px;
+      height: 400px;
+      position: absolute;
+      margin: auto;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      box-shadow: 0px 0px 15px 5px black;
+    }
+    .bottom{
+      height: 0;
+      width: 100%;
+      bottom: 0;
+      position: absolute;
+      transition-duration: 4s;
+      transition-property: all;
+      opacity: 0;
+      background-color:rgba(0, 0, 0, 0.5);
+    }
+    .main:hover .bottom{
+      height: 100%;
+      opacity: 1;
+    }
+    .top{
+      height: 0;
+      width: 100%;
+      top: 0;
+      position: absolute;
+      transition-duration: 4s;
+      transition-property: all;
+      opacity: 0;
+      background-color:rgba(0, 0, 0, 0.01);
+    }
+    .main:hover .top{
+      height: 100%;
+      opacity: 1;
+    }
+    .top-img{
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      margin: auto;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+  </style>
+
+</head>
+<body>
+<div class="main">
+  <img src="../assests/image/car.png">
+  <div class="bottom"></div>
+  <div class="top"><img class="top-img" src="../assests/image/deleteIcon.png"></div>
+</div>
+
+</body>
+</html>

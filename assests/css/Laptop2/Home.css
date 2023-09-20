@@ -1,0 +1,64 @@
+@media all and (max-width: 1024px) and (min-width:768px){
+
+    section:nth-child(1){
+        height: 70vh;
+    }
+
+    section:nth-child(1)>div:nth-child(1){
+        height: 70vh;
+    }
+
+    section:nth-child(1)>div:nth-child(1)>img{
+        height: 70vh;
+    }
+
+    section:nth-child(1)>div:nth-child(2)>h1{
+        font-size: 3.5vw;
+        top: 13.3vh;
+    }
+
+    section:nth-child(1)>div:nth-child(2)>h2{
+        font-size: 3vw;
+        top: 15.5vh;
+    }
+
+    section:nth-child(1)>div:nth-child(2)>h3{
+        font-size: 4.6vw;
+        top: 23vh;
+    }
+
+    section:nth-child(1)>div:nth-child(2)>h4{
+        font-size: 4.6vw;
+        padding-left: 16vw;
+        top: 23vh;
+    }
+
+    section:nth-child(1)>div:nth-child(2)>div{
+        top: 30vh;
+    }
+
+    section:nth-child(1)>div:nth-child(2)>h5{
+        font-size: 1.5vw;
+        top: 38vh;
+    }
+
+    section:nth-child(1)>div:nth-child(2)>p{
+        font-size: 1vw;
+        top: 41vh;
+    }
+
+    section:nth-child(1)>div:nth-child(2)>h6{
+        top: 50vh;
+    }
+
+    #myImage{
+        height: 60%;
+        width: 34%;
+    }
+
+    #linkedIn, #instergram, #facebook{
+        top: 50.9vh;
+    }
+
+}
+

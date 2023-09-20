@@ -1,0 +1,55 @@
+@media all and (max-width: 768px) and (min-width:425px){
+
+    section:nth-child(5){
+        height: 70vh;
+    }
+
+    section:nth-child(5)>h5{
+        font-size: 1.5vw;
+    }
+
+    section:nth-child(5)>h1{
+        width: 20vw;
+        font-size: 4vw;
+    }
+
+    section:nth-child(5)>div{
+        height: 10vh;
+    }
+
+    section:nth-child(5)>div>h2{
+        font-size: 1.3vw;
+        top: 2vh;
+    }
+
+    section:nth-child(5)>div>h3{
+        font-size: 1vw;
+        top: 6vh;
+        text-align: center;
+    }
+
+    section:nth-child(5)>div>h4{
+        top: 8.5vh;
+    }
+
+    #pathImg{
+        top: 30vh;
+    }
+
+    #section5Box1{
+        top: 26vh;
+    }
+
+    #section5Box2{
+        top: 33vh;
+    }
+
+    #section5Box3{
+        top: 42vh;
+    }
+
+    #section5Box4{
+        top: 48vh;
+    }
+
+}

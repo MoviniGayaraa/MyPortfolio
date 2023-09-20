@@ -1,0 +1,33 @@
+@media all and (max-width: 1024px) and (min-width:768px){
+
+    section:nth-child(4){
+        height: 80vh;
+    }
+
+    #section4MyImage2{
+        top: 10vh;
+    }
+
+    section:nth-child(4)>div{
+        top: 13vh;
+    }
+
+    section:nth-child(4)>div>h5{
+        font-size: 1.5vw;
+    }
+
+    section:nth-child(4)>div>h1{
+        width: 35vw;
+        font-size: 4vw;
+        top: 3vh;
+    }
+
+    section:nth-child(4)>div>h3{
+        top: 17vh;
+    }
+
+    section:nth-child(4)>div>img{
+        top: 30vh;
+    }
+
+}

@@ -1,0 +1,182 @@
+section:nth-child(3){
+    position: relative;
+    height: 140vh;
+    width: 72vw;
+    padding-left: 14vw;
+    padding-right: 14vw;
+    background-color: #161a1d;
+}
+
+section:nth-child(3)>h5{
+    width: 7vw;
+    font-family: Inter, SansSerif;
+    font-size: 1vw;
+    font-weight: 600;
+    color: #EF7418;
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+section:nth-child(3)>h5:hover{
+    color:white;
+}
+
+
+section:nth-child(3)>h1{
+    width: 14vw;
+    font-family: 'Catamaran';
+    font-size: 3vw;
+    font-weight: 700;
+    color:white;
+    position: absolute;
+    top: 13vh;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+section:nth-child(3)>h1:hover{
+    color: #EF7418;
+}
+
+section:nth-child(3)>div{
+    width: 23.5vw;
+    height: 35vh;
+    background-color: black;
+    box-shadow:   #434d56 0px 4px 12px;
+    border-radius: 1vh;
+    position: absolute;
+    margin: auto;
+}
+
+section:nth-child(3)>div:hover{
+    box-shadow: #EF7418 0px 4px 12px;
+    transform: scale(1.02);
+}
+
+section:nth-child(3)>div>h4{
+    font-family: 'Catamaran';
+    font-size: 1.5vw;
+    font-weight: 700;
+    color: #808080;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 15vh;
+    margin: auto;
+}
+section:nth-child(3)>div>h4:hover{
+    color: #EF7418;
+
+}
+
+section:nth-child(3)>div>h3{
+    width: 20vw;
+    font-family: Inter, SansSerif;
+    font-size: 1vw;
+    font-weight: 600;
+    text-align: center;
+    color: #808080;
+    position: absolute;
+    top: 21vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+section:nth-child(3)>div>h3:hover{
+    color: #EF7418;
+
+}
+
+
+#box1{
+    top: 25vh;
+    left: 14vw;
+}
+
+#box1>img{
+    width: 20%;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 4vh;
+    margin: auto;
+}
+
+#box2{
+    top: 25vh;
+    right: 0;
+    left: 0;
+}
+
+#box2>img{
+    width: 18%;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 4.8vh;
+    margin: auto;
+}
+
+#box3{
+    top: 25vh;
+    right: 14vw;
+}
+
+#box3>img{
+    width: 20%;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 4vh;
+    margin: auto;
+}
+
+#box4{
+    top: 61.5vh;
+    left: 14vw;
+}
+
+#box4>img{
+    width: 18%;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 4vh;
+    margin: auto;
+}
+
+#box5{
+    top: 61.5vh;
+    right: 0;
+    left: 0;
+}
+
+#box5>img{
+    width: 16%;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 4vh;
+    margin: auto;
+}
+
+#box6{
+    top: 61.5vh;
+    right: 14vw;
+}
+
+#box6>img{
+    width: 20%;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 4vh;
+    margin: auto;
+}
+
+
+
+

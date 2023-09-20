@@ -1,0 +1,106 @@
+section:nth-child(6){
+    position: relative;
+    height: 60vh;
+    width: 72vw;
+    padding-left: 14vw;
+    padding-right: 14vw;
+    background-color: #161a1d;
+}
+
+section:nth-child(6)>h5{
+    width: 5.5vw;
+    font-family: Inter, SansSerif;
+    font-size: 1vw;
+    font-weight: 600;
+    color:#EF7418;
+
+    position: absolute;
+    top: 15vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+section:nth-child(6)>h5:hover{
+    color: white;
+}
+
+section:nth-child(6)>h1{
+    width: 19vw;
+    font-family: 'Catamaran';
+    font-size: 3vw;
+    font-weight: 700;
+    color: white;
+
+    position: absolute;
+    top: 18vh;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+section:nth-child(6)>h1:hover{
+    color:#EF7418;
+}
+
+
+section:nth-child(6)>img{
+    width: 5%;
+
+    position: absolute;
+    top: 35vh;
+    margin: auto;
+}
+
+section:nth-child(6)>img:hover{
+    width: 6%;
+    transform: scale(1.02);
+}
+
+
+
+#javaLogo{
+    right: 0;
+    left: 0;
+}
+
+#sqlLogo{
+    right: 0vw;
+    left: 15vw;
+}
+
+#jsLogo{
+    border-radius: 15%;
+    right: 15vw;
+    left: 0vw;
+}
+
+#cssLogo{
+    right: 0vw;
+    left: 30vw;
+}
+
+#htmlLogo{
+    right: 30vw;
+    left: 0vw;
+}
+
+#figmaLogo{
+    right: 0vw;
+    left: 45vw;
+}
+
+#phpLogo{
+    right: 45vw;
+    left: 0vw;
+}
+
+#pythonLogo{
+    right: 0vw;
+    left: 60vw;
+}
+
+#hibernateLogo{
+    right: 60vw;
+    left: 0vw;
+}
