@@ -27,7 +27,7 @@ section:nth-child(11)>div:nth-child(2){
     margin-left: 14vw;
     margin-right: 14vw;
     border-radius: 3vh;
-    background-color: #161a1d;
+    background-color: black;
     box-shadow: #EF7418 0px 4px 12px;
 
     position: absolute;
@@ -37,7 +37,7 @@ section:nth-child(11)>div:nth-child(2){
 }
 
 section:nth-child(11)>div:nth-child(2):hover{
-    background-color: #808080;
+    background-color:  #131518;
 }
 
 section:nth-child(11)>div:nth-child(2)>h1{
@@ -136,11 +136,13 @@ section:nth-child(11)>div:nth-child(2)>form{
 }
 
 #btnSend{
-    width: 3vw;
+    width: 4vw;
     font-family: Inter, SansSerif;
     font-size: 1vw;
     font-weight: 600;
     color:black;
+    /*background-color:black ;*/
+    /*border: 2px solid #EF7418;*/
 
     background-color:#EF7418;
     border-radius: 8px;

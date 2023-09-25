@@ -4,7 +4,9 @@ section:nth-child(3){
     width: 72vw;
     padding-left: 14vw;
     padding-right: 14vw;
-    background-color: #161a1d;
+    /*background-color: #161a1d;*/
+    background-color: rgba(62, 69, 81, 0.3);
+    /*background-color: transparent;*/
 }
 
 section:nth-child(3)>h5{
@@ -44,7 +46,9 @@ section:nth-child(3)>h1:hover{
 section:nth-child(3)>div{
     width: 23.5vw;
     height: 35vh;
-    background-color: black;
+    /*background-color: black;*/
+    background-color: #131518;
+    /*box-shadow:  #131518 0px 4px 12px;*/
     box-shadow:   #434d56 0px 4px 12px;
     border-radius: 1vh;
     position: absolute;
@@ -52,7 +56,7 @@ section:nth-child(3)>div{
 }
 
 section:nth-child(3)>div:hover{
-    box-shadow: #EF7418 0px 4px 12px;
+    background-color: black;
     transform: scale(1.02);
 }
 
@@ -60,16 +64,13 @@ section:nth-child(3)>div>h4{
     font-family: 'Catamaran';
     font-size: 1.5vw;
     font-weight: 700;
-    color: #808080;
+    /*color: #808080;*/
+    color: white;
     position: absolute;
     right: 0;
     left: 0;
     top: 15vh;
     margin: auto;
-}
-section:nth-child(3)>div>h4:hover{
-    color: #EF7418;
-
 }
 
 section:nth-child(3)>div>h3{
@@ -79,17 +80,13 @@ section:nth-child(3)>div>h3{
     font-weight: 600;
     text-align: center;
     color: #808080;
+    /*color: white;*/
     position: absolute;
     top: 21vh;
     left: 0;
     right: 0;
     margin: auto;
 }
-section:nth-child(3)>div>h3:hover{
-    color: #EF7418;
-
-}
-
 
 #box1{
     top: 25vh;

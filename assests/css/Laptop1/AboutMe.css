@@ -10,7 +10,7 @@ section:nth-child(4){
 #section4MyImage2{
     width: 20%;
     position: absolute;
-    top: 20vh;
+    top: 11vh;
     margin: auto;
 }
 
@@ -59,9 +59,6 @@ section:nth-child(4)>div>h3{
     position: absolute;
     top: 21vh;
     margin: auto;
-}
-section:nth-child(4)>div>h3:hover{
-    color: #EF7418;
 }
 
 section:nth-child(4)>div>img{

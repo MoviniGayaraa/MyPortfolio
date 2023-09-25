@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <title>Case 3</title>
+
+    <style>
+        body {
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        main {
+            position: relative;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            animation-name: slider;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: ease-out;
+        }
+
+        main > div {
+            background-color: #1a1616;
+            height: 100%;
+            width: 100%;
+            flex-shrink: 0;
+            background-size: cover;
+            background-position: center;
+
+        }
+        main > div:first-child {
+            background-image: url("assests/closeup-shot-elephants-standing-near-lake-sunset.jpg");
+        }
+
+        main > div:nth-child(2) {
+            background-image: url("assests/sportive-dog-performing-during-lure-coursing-competition.jpg");
+        }
+
+        main > div:nth-child(3) {
+            background-image: url("assests/eurasian-wolf-white-winter-habitat-beautiful-winter-forest.jpg");
+        }
+
+        main > div:nth-child(4) {
+            background-image: url("assests/beautiful-domestic-cat-laying-fence.jpg");
+        }
+        main> div:nth-child(5) {
+            background-image: url("assests/lion-lying-ground-sunlight-with-blurry-surface.jpg");
+        }
+        @keyframes slider {
+            0% {
+                right: 0;
+            }
+            25% {
+                right: 100vw;
+            }
+            50% {
+                right: 200vw;
+            }
+            75% {
+                right: 300vw;
+            }
+            100% {
+                right: 400vw;
+            }
+        }
+    </style>
+</head>
+<body>
+<main>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</main>
+</body>
+</html>

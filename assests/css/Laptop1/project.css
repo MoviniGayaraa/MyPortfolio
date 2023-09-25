@@ -56,23 +56,25 @@ section:nth-child(7)>img:hover{
 
 /*student*/
 #Project1{
-    width: 35%;
+    width: 18%;
     box-shadow:   #434d56 0px 4px 12px;
     position: absolute;
     top: 45vh;
-    left: -17vw;
+    left: -8vw;
     margin: auto;
 
     opacity: 90%;
 }
 
+
+
 /*pilisaru*/
 #Project2{
-    width: 35%;
+    width: 30%;
     box-shadow:   #434d56 0px 4px 12px;
     position: absolute;
     top: 45vh;
-    right: -12vw;
+    right: -10vw;
     margin: auto;
 
     opacity: 80%;
@@ -80,7 +82,7 @@ section:nth-child(7)>img:hover{
 
 /*pharmacy*/
 #Project3{
-    width: 35%;
+    width: 40%;
     box-shadow:   #434d56 0px 4px 12px;
     position: absolute;
     top: 40vh;
@@ -111,7 +113,7 @@ section:nth-child(7)>img:hover{
 }
 
 section:nth-child(7)>h7{
-    width: 13vw;
+    width: 11vw;
     font-family: Inter, SansSerif;
     font-size: 1vw;
     font-weight: 600;
@@ -121,16 +123,20 @@ section:nth-child(7)>h7{
     right: 0;
     left: 0;
     margin: auto;
-
-    background-color: #EF7418;
+    background-color: black;
+    /*box-shadow:#EF7418 0px 4px 12px;*/
     border-radius: 8px;
+    border: 2px solid #EF7418;
+
+    /*background-color: #EF7418;*/
+    /*border-radius: 8px;*/
     padding: 1vh;
-    box-shadow: #EF7418 0px 4px 12px;
+    /*box-shadow: #EF7418 0px 4px 12px;*/
 }
 
 section:nth-child(7)>h7:hover{
-    background-color: black;
-    box-shadow: #EF7418 0px 4px 12px;
+    background-color: #EF7418;
+    /*box-shadow: #EF7418 0px 4px 12px;*/
 }
 
 section:nth-child(7)>h7>a {

@@ -49,15 +49,21 @@ header>nav>ul>li:nth-child(7) :hover{
 }
 
 header>nav>ul>li:nth-child(7){
-    background-color: #EF7418;
+    background-color:black ;
+    border: 2px solid #EF7418;
     border-radius: 8px;
     padding: 1vh;
-    box-shadow: #EF7418 0px 4px 12px;
+    /*box-shadow: #EF7418 0px 4px 12px;*/
 }
 
 header>nav>ul>li:nth-child(7):hover{
-    background-color:black ;
-    box-shadow:#EF7418 0px 4px 12px;
+    background-color: #EF7418;
+    /*box-shadow:#EF7418 0px 4px 12px;*/
+    border-radius: 8px;
 
 
+
+}
+body{
+    background-color: black;
 }

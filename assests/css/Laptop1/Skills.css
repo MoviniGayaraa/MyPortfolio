@@ -4,7 +4,8 @@ section:nth-child(5){
     width: 72vw;
     padding-left: 14vw;
     padding-right: 14vw;
-    background-color: #161a1d;
+    /*background-color: #161a1d;*/
+    background-color: rgba(62, 69, 81, 0.3);
 }
 
 section:nth-child(5)>h5{
@@ -77,10 +78,6 @@ section:nth-child(5)>div>h2{
     margin: auto;
 }
 
-section:nth-child(5)>div>h2:hover{
-    color: #EF7418;
-}
-
 section:nth-child(5)>div>h3{
     font-family: Inter, SansSerif;
     font-size: 0.8vw;
@@ -92,10 +89,6 @@ section:nth-child(5)>div>h3{
     left: 0;
     margin: auto;
 }
-section:nth-child(5)>div>h3:hover{
-    color: #EF7418;
-}
-
 
 section:nth-child(5)>div>h4{
     font-family: Inter, SansSerif;

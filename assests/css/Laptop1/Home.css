@@ -22,6 +22,7 @@ section:nth-child(1)>div:nth-child(2){
 
 section:nth-child(1)>div:nth-child(2)>h3{
     font-family: 'Catamaran';
+
     font-size: 4.5vw;
     font-weight: 900;
     color: #EF7418;
@@ -38,6 +39,7 @@ section:nth-child(1)>div:nth-child(2)>h3:hover{
 
 section:nth-child(1)>div:nth-child(2)>h4{
     font-family: 'Catamaran';
+
     font-size: 4.5vw;
     font-weight: 900;
     color: white;
@@ -56,6 +58,7 @@ section:nth-child(1)>div:nth-child(2)>h4:hover{
 section:nth-child(1)>div:nth-child(2)>h5{
     font-family: 'Catamaran';
     font-size: 1.2vw;
+
     font-weight: 600;
     color: white;
     padding-left: 1.5vw;
@@ -74,14 +77,12 @@ section:nth-child(1)>div:nth-child(2)>p{
     font-weight: 200;
     color: white;
     font-size: 0.9vw;
+
     padding-left: 1.5vw;
 
     position: absolute;
     top: 49vh;
     margin: auto;
-}
-section:nth-child(1)>div:nth-child(2)>p:hover{
-    color: #EF7418;
 }
 
 section:nth-child(1)>div:nth-child(2)>h6{
@@ -89,6 +90,7 @@ section:nth-child(1)>div:nth-child(2)>h6{
     font-weight: 600;
     color: white;
     font-size: 0.8vw;
+
     padding: 0.7vw;
     background-color: #EF7418;
     border-radius: 8px;
@@ -111,8 +113,9 @@ section:nth-child(1)>div>img:hover{
 
 #myImage{
     position: absolute;
-    height: 75%;
-    width: 30%;
+    height: 84%;
+    /*height: 75%;*/
+    width: 26%;
     padding-right: 13.33vw;
     padding-top: 10vh;
 

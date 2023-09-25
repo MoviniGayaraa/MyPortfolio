@@ -4,7 +4,8 @@ section:nth-child(8){
     width: 72vw;
     padding-left: 14vw;
     padding-right: 14vw;
-    background-color: #161a1d;
+    /*background-color: #161a1d;*/
+    background-color: rgba(62, 69, 81, 0.3);
 }
 
 section:nth-child(8)>h5{
@@ -41,9 +42,12 @@ section:nth-child(8)>h1:hover{
     color: #EF7418;
 }
 section:nth-child(8)>img:hover{
-    transform: scale(1.02);}
+    transform: scale(1.02);
+    border: 3px solid black;
+}
 
 section:nth-child(8)>video:hover{
+    border: 3px solid black;
     transform: scale(1.02);}
 
 #section8Img1{

@@ -4,7 +4,8 @@ section:nth-child(6){
     width: 72vw;
     padding-left: 14vw;
     padding-right: 14vw;
-    background-color: #161a1d;
+    /*background-color: #161a1d;*/
+    background-color: rgba(62, 69, 81, 0.3);
 }
 
 section:nth-child(6)>h5{

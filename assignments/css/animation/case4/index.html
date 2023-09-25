@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case 4</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-image: url("assets/sky.jpg");
+            background-size: cover;
+        }
+        body > section:first-child {
+            width: 100vw;
+            height: 70vh;
+        }
+
+        body > section:nth-child(3) {
+            width: 30vw;
+            height: max-content;
+            position: absolute;
+            bottom: 15vh;
+            left: 32vw;
+        }
+
+        .city {
+            position: fixed;
+            width: 180vw;
+            height: 40vh;
+            bottom: 30vh;
+            animation-name: background;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+
+        }
+
+        #road {
+            position: relative;
+            animation-name: background;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+
+        #car {
+            position: absolute;
+            width: 30vw;
+            bottom: 1px;
+        }
+
+        .wheel {
+            position: absolute;
+            width: 6vw;
+            bottom: 0;
+            animation-name: wheel;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+
+        body > section:nth-child(3) > img:nth-child(2) {
+            left: 2.5vw;
+        }
+
+        body > section:nth-child(3) > img:nth-child(3) {
+            right: 3.1vw;
+        }
+
+
+        @keyframes background {
+            0% {
+                transform: translateX(0%);
+            }
+            100% {
+                transform: translateX(-40%);
+            }
+        }
+
+        @keyframes wheel {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+<section>
+    <img src="assets/city.png" class="city"/>
+</section>
+<img id="road" src="assets/road.jpg"/>
+<section>
+    <img id="car" src="assets/car.png" />
+    <img class="wheel" src="assets/wheel.png"/>
+    <img class="wheel" src="assets/wheel.png"/>
+</section>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Case 3</title>
+
+
+  <style>
+
+    section{
+      height: 100vh;
+      width: 100vw;
+      position: relative;
+    }
+
+    section>div{
+      height: 100px;
+      width: 200px;
+      border-radius: 20px;
+      background-color: blue;
+
+      position: absolute;
+      top: 10vh;
+      left: 10vw;
+      margin: auto;
+
+      animation:testOne;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-delay: 1s;
+    }
+
+    @keyframes testOne {
+      0%{
+        top: 10vh;
+        left: 10vw;
+        transform: rotate(0deg);
+        background-color: blue;
+      }
+      12%{
+        top: 10vh;
+        left: 80vw;
+        transform: rotate(180deg);
+        background-color: yellow;
+      }
+      24%{
+        top: 80vh;
+        left: 80vw;
+        transform: rotate(0deg);
+        background-color: red;
+      }
+      36%{
+        top: 80vh;
+        left: 10vw;
+        transform: rotate(180deg);
+        background-color: deeppink;
+      }
+      48%{
+        top: 10vh;
+        left: 10vw;
+        transform: rotate(0deg);
+        background-color: orange;
+      }
+      60%{
+        top: 80vh;
+        left: 10vw;
+        transform: rotate(180deg);
+        background-color: deeppink;
+      }
+      72%{
+        top: 80vh;
+        left: 80vw;
+        transform: rotate(0deg);
+        background-color: red;
+      }
+      84%{
+        top: 10vh;
+        left: 80vw;
+        transform: rotate(180deg);
+        background-color: yellow;
+      }
+      96%{
+        top: 10vh;
+        left: 10vw;
+        transform: rotate(0deg);
+        background-color: blue;
+      }
+    }
+
+  </style>
+
+  <link rel="stylesheet" href="../../normalize.css">
+
+</head>
+
+<body>
+
+<section>
+
+  <div></div>
+
+</section>
+
+</body>
+
+</html>
