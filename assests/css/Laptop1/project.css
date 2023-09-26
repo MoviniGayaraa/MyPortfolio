@@ -60,7 +60,7 @@ section:nth-child(7)>img:hover{
     box-shadow:   #434d56 0px 4px 12px;
     position: absolute;
     top: 45vh;
-    left: -8vw;
+    left: -3vw;
     margin: auto;
 
     opacity: 90%;
@@ -74,7 +74,7 @@ section:nth-child(7)>img:hover{
     box-shadow:   #434d56 0px 4px 12px;
     position: absolute;
     top: 45vh;
-    right: -10vw;
+    right: -8vw;
     margin: auto;
 
     opacity: 80%;

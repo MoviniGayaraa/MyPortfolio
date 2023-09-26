@@ -115,7 +115,8 @@ section:nth-child(1)>div>img:hover{
     position: absolute;
     height: 84%;
     /*height: 75%;*/
-    width: 26%;
+
+     width: 26%;
     padding-right: 13.33vw;
     padding-top: 10vh;
 
