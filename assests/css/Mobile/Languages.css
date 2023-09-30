@@ -1,23 +1,27 @@
 @media all and (max-width: 425px) {
 
+    /*section:nth-child(6){*/
+    /*    display: none;*/
+    /*}*/
+
     section:nth-child(6){
         height: 10vh;
     }
 
     section:nth-child(6)>h5{
-        top: 5vh;
+        top: 0.1vh;
         font-size: 2.5vw;
         width: 13vw;
     }
 
     section:nth-child(6)>h1{
-        top: 7vh;
+        top: 2vh;
         width: 31vw;
         font-size: 5vw;
     }
 
     section:nth-child(6)>img{
-        top: 15vh;
+        top: 6vh;
     }
 
 

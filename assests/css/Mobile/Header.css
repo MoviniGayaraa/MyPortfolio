@@ -1,6 +1,6 @@
 @media all and (max-width: 425px) {
 
-    header>img{
+   header>img{
         display: none;
     }
 

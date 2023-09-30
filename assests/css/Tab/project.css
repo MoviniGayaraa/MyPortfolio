@@ -15,6 +15,10 @@
         width: 25vw;
     }
 
+    section:nth-child(7)>h7{
+        bottom:0.9vh;
+    }
+
     #LeftArrow{
         top: 52vh;
     }

@@ -1,0 +1,6 @@
+@media all and (max-width: 425px) {
+
+    #btnSend{
+        width: 6vw;
+    }
+}

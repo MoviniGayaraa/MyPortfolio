@@ -21,4 +21,29 @@
         top: 58vh;
     }
 
+    /*student*/
+    #Project1{
+        top: 37vh;
+
+    }
+
+
+
+    /*pilisaru*/
+    #Project2{
+        top: 38vh;
+
+    }
+
+    /*pharmacy*/
+    #Project3{
+        top: 36vh;
+
+
+    }
+
+    section:nth-child(7)>h7{
+        bottom:1.8vh;
+    }
+
 }
