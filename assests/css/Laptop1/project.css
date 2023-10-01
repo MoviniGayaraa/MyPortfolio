@@ -56,11 +56,14 @@ section:nth-child(7)>img:hover{
 
 /*student*/
 #Project1{
-    width: 18%;
+    width: 31%;
+    /*width: 18%;*/
     box-shadow:   #434d56 0px 4px 12px;
     position: absolute;
-    top: 45vh;
-    left: -3vw;
+    top: 54vh;
+    /*top: 45vh;*/
+    left: 1vw;
+    /*left: -3vw;*/
     margin: auto;
 
     opacity: 90%;
@@ -70,11 +73,14 @@ section:nth-child(7)>img:hover{
 
 /*pilisaru*/
 #Project2{
-    width: 30%;
+    width: 26%;
+    /*width: 30%;*/
     box-shadow:   #434d56 0px 4px 12px;
     position: absolute;
-    top: 45vh;
-    right: -8vw;
+    top: 43vh;
+    /*top: 45vh;*/
+    right: 3vw;
+    /*right: -8vw;*/
     margin: auto;
 
     opacity: 80%;
@@ -82,12 +88,14 @@ section:nth-child(7)>img:hover{
 
 /*pharmacy*/
 #Project3{
-    width: 40%;
+    width: 37%;
+    /*width: 40%;*/
     box-shadow:   #434d56 0px 4px 12px;
     position: absolute;
-    top: 40vh;
+    top: 36vh;
     right: 0;
-    left: 0;
+    left: 2vw;
+    /*left: 0;*/
     margin: auto;
 
 }

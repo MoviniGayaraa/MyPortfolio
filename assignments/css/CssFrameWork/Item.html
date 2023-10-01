@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cssFrameWork</title>
+    <link rel="stylesheet" href="assests/bootsrap/css/bootstrap.css">
+    <script src="assests/bootsrap/js/bootstrap.js"></script>
+</head>
+<body>
+<!--Nav Bar--------------------------------------------------------------------------------------------------------------------------------->
+<nav class="navbar navbar-expand-lg bg-body-tertiary"  >
+    <div class="container-fluid ">
+        <a class="navbar-brand" href="#">POS</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="customer.html">Customer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Item.html">Item</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="order.html">Order</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Options
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="customer.html">Customer Manage</a></li>
+                        <li><a class="dropdown-item" href="Item.html">Item Manage</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="order.html">Order Manage</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+            <form class="d-flex" role="search">
+                <button class="btn btn-outline-success" type="submit">Sign Up</button>
+                <button class="btn btn-outline-success" type="submit">Log Out</button>
+            </form>
+        </div>
+    </div>
+
+</nav>
+
+
+<!--Desc Nav-------------------------------------------------------------------------------------------------------------------------------->
+<nav class="navbar bg-body-tertiary" >
+    <div class="container-fluid" style="height:1px">
+        <a class="navbar-brand" href="#">
+            <img src="assests/images/item4.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            Item
+        </a>
+    </div>
+</nav>
+
+
+
+
+<!--ItemDetail--------------------------------------------------------------------------------------------------------------------->
+<div class="container text-center  mt-5 border border-3">
+    <div class="row align-items-start">
+        <div class="col mt-5">
+
+            <div class="card border border-1 " style="max-width: 25rem; height: 420px;">
+                <div class="card-header text-white bg-success">Item Details</div>
+                <div class="card-body m-3">
+                    <div class=" text-start">
+                        <label for="txtID" class="form-label">Item Code</label>
+                        <input type="text" class="form-control" id="txtID" >
+                    </div>
+                    <div class=" text-start">
+                        <label for="txtName" class="form-label">Item Name</label>
+                        <input type="text" class="form-control" id="txtName" >
+                    </div>
+                    <div class=" text-start">
+                        <label for="txtPrice" class="form-label">Item Price</label>
+                        <input type="text" class="form-control" id="txtPrice" >
+                    </div>
+                    <div class=" text-start">
+                        <label for="txtQuantity" class="form-label">Item Quantity</label>
+                        <input type="text" class="form-control" id="txtQuantity" >
+                    </div>
+
+
+                    <button type="button " class="btn btn-danger mt-3">Save</button>
+                    <button type="button " class="btn btn-warning mt-3">Update</button>
+                    <button type="button " class="btn btn-info mt-3">Clear</button>
+                    <button type="button " class="btn btn-success mt-3">GetAll</button>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!--        search-------------------------------------------------------------------------------------------------->
+        <div class="col mt-5">
+
+            <div class="card border border-1 " style="max-width: 25rem; height: 280px;">
+                <div class="card-header text-white bg-warning">Item Search</div>
+                <div class="card-body m-3">
+                    <div class="form-floating mb-3">
+                        <input type="InputName" class="form-control" id="floatingInput" >
+                        <label for="floatingInput">Input Item Name/Code Here</label>
+                    </div>
+
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Name</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+
+                    <div class="btn-group mt-3 " role="group" aria-label="Basic mixed styles example">
+                        <button type="button" class="btn btn-danger">Delete</button>
+                        <button type="button" class="btn btn-warning">Details</button>
+                        <button type="button" class="btn btn-success">Clear</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+<!--table---------------------------------------------------------------------------------------------------------------------->
+        <table class="table mt-5 border border-3">
+            <thead>
+            <tr>
+                <th scope="col">Item Code</th>
+                <th scope="col">Item Name</th>
+                <th scope="col">Item Price</th>
+                <th scope="col">Item Quntity</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">I001</th>
+                <td>Chocolate</td>
+                <td>400.00</td>
+                <td>40</td>
+            </tr>
+            <tr>
+                <th scope="row">I002</th>
+                <td>Biscuit</td>
+                <td>100.00</td>
+                <td>30</td>
+            </tr>
+
+            </tbody>
+        </table>
+
+
+    </div>
+</div>
+
+
+
+
+</body>
