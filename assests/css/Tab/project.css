@@ -16,7 +16,7 @@
     }
 
     section:nth-child(7)>h7{
-        bottom:0.9vh;
+        bottom:3vh;
     }
 
     #LeftArrow{
@@ -28,11 +28,14 @@
     }
 
     #Project1{
-        top: 42.5vh;
+        top: 33vh;
     }
 
     #Project2{
-        top: 42.5vh;
+        top: 33vh;
+    }
+    #Project1{
+        top: 33vh;
     }
 
 }

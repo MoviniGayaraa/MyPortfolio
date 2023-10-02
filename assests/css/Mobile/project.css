@@ -20,17 +20,19 @@
         height: 7vh;
     }
 
+    #Project3{
+        top: 34vh;
+    }
+
     #Project1{
-        top: 30vh;
+        top: 34vh;
     }
 
     #Project2{
-        top: 30vh;
+        top: 34vh;
     }
 
-    #Project3{
-        top: 28vh;
-    }
+
 
     section:nth-child(7)>h7{
         bottom: 5vh;
