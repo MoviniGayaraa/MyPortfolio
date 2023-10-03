@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cssFrameWork</title>
+    <link rel="stylesheet" href="assests/bootsrap/css/bootstrap.css">
+    <script src="assests/bootsrap/js/bootstrap.js"></script>
+</head>
+<body>
+<!--Nav Bar------------------------------------------------------------------------------------------->
+<nav class="navbar navbar-expand-lg bg-body-tertiary"  >
+    <div class="container-fluid ">
+        <a class="navbar-brand" href="#">POS</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item" id="lnkHome">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item" id="lnkCustomer">
+                    <a class="nav-link" href="#">Customer</a>
+                </li>
+                <li class="nav-item" id="lnkItem">
+                    <a class="nav-link" href="#">Item</a>
+                </li>
+                <li class="nav-item" id="lnkOrders">
+                    <a class="nav-link" href="#">Order</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Options
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="customer.html">Customer Manage</a></li>
+                        <li><a class="dropdown-item" href="Item.html">Item Manage</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="order.html">Order Manage</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+            <form class="d-flex" role="search">
+                <button class="btn btn-outline-success" type="submit">sign Up</button>
+                <button class="btn btn-outline-success" type="submit">Log Out</button>
+            </form>
+        </div>
+    </div>
+
+</nav>
+
+<!--home------------------------------------------------------------------------------------------------------------------>
+<main class="container-fluid " id="dashboardContent">
+    <img src="assests/images/homePic%20(2).png" class="img-fluid" style="width: 100vw ">
+</main>
+
+
+<!--customer------------------------------------------------------------------------------------------------------------------>
+<main class="container-fluid " id="customerContent">
+    <!--Desc Nav----------------------------------------------------------------------------------------->
+    <nav class="navbar bg-body-tertiary" >
+        <div class="container-fluid" style="height:1px">
+            <a class="navbar-brand" href="#">
+                <img src="assests/images/man.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                Customer
+            </a>
+        </div>
+    </nav>
+
+
+
+
+    <!--customerDetail--------------------------------------------------------------------------------------------->
+
+    <div class="container text-center  mt-5 border border-3">
+        <!--    //-->
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Customer</li>
+            </ol>
+        </nav>
+
+        <!--DESC-->
+        <!--customerDetail--------------------------------------------------------------------------------------------->
+
+        <div class="row align-items-start">
+            <div class="col mt-5">
+
+                <div class="card border border-1 " style="max-width: 25rem; height: 420px;">
+                    <div class="card-header text-white bg-success">Customer Details</div>
+                    <div class="card-body m-3">
+                        <div class=" text-start">
+                            <label for="txtID" class="form-label">Customer ID</label>
+                            <input type="text" class="form-control" id="txtIDNumber" >
+                        </div>
+                        <div class=" text-start">
+                            <label for="txtName" class="form-label">Customer Name</label>
+                            <input type="text" class="form-control" id="txtCusNmae" >
+                        </div>
+                        <div class=" text-start">
+                            <label for="txtAddress" class="form-label">Customer Address</label>
+                            <input type="text" class="form-control" id="txtAddress" >
+                        </div>
+                        <div class=" text-start">
+                            <label for="txtSalary" class="form-label">Customer Salary</label>
+                            <input type="text" class="form-control" id="txtsalary" >
+                        </div>
+
+
+                        <button type="button " class="btn btn-danger mt-3">Save</button>
+                        <button type="button " class="btn btn-warning mt-3">Update</button>
+                        <button type="button " class="btn btn-info mt-3">Clear</button>
+                        <button type="button " class="btn btn-success mt-3">GetAll</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-----------------------------        search---------------------------------------------------------->
+            <div class="col mt-5">
+
+                <div class="card border border-1 " style="max-width: 25rem; height: 280px;">
+                    <div class="card-header text-white bg-warning">Customer Search</div>
+                    <div class="card-body m-3">
+                        <div class="form-floating mb-3">
+                            <input type="InputName" class="form-control" id="InputFiied" >
+                            <label for="floatingInput">Input name/NIC/Tp Here</label>
+                        </div>
+
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Name</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+
+                        <div class="btn-group mt-3 " role="group" aria-label="Basic mixed styles example">
+                            <button type="button" class="btn btn-danger">Delete</button>
+                            <button type="button" class="btn btn-warning">Details</button>
+                            <button type="button" class="btn btn-success">Clear</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--table-------------------------------------------------------------------------------------------------------->
+            <table class="table mt-5 border border-3">
+                <thead>
+                <tr>
+                    <th scope="col">Customer ID</th>
+                    <th scope="col"> Name</th>
+                    <th scope="col">Address</th>
+                    <th scope="col">salary</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">C001</th>
+                    <td>amal</td>
+                    <td>Galle</td>
+                    <td>50000</td>
+                </tr>
+                <tr>
+                    <th scope="row">C002</th>
+                    <td>Kamal</td>
+                    <td>Galle</td>
+                    <td>20000</td>
+                </tr>
+
+                </tbody>
+            </table>
+
+
+        </div>
+    </div>
+
+
+
+
+</main>
+
+<!--item------------------------------------------------------------------------------------------------------------------>
+<main class="container-fluid " id="itemContent">
+    <!--Desc Nav-------------------------------------------------------------------------------------------------------------------------------->
+    <nav class="navbar bg-body-tertiary" >
+        <div class="container-fluid" style="height:1px">
+            <a class="navbar-brand" href="#">
+                <img src="assests/images/item4.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                Item
+            </a>
+        </div>
+    </nav>
+
+
+
+
+    <!--ItemDetail--------------------------------------------------------------------------------------------------------------------->
+    <div class="container text-center  mt-5 border border-3">
+        <!--    //-->
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Item</li>
+            </ol>
+        </nav>
+
+        <!--DESC-->
+        <div class="row align-items-start">
+            <div class="col mt-5">
+
+                <div class="card border border-1 " style="max-width: 25rem; height: 420px;">
+                    <div class="card-header text-white bg-success">Item Details</div>
+                    <div class="card-body m-3">
+                        <div class=" text-start">
+                            <label for="txtID" class="form-label">Item Code</label>
+                            <input type="text" class="form-control" id="txtID" >
+                        </div>
+                        <div class=" text-start">
+                            <label for="txtName" class="form-label">Item Name</label>
+                            <input type="text" class="form-control" id="txtName" >
+                        </div>
+                        <div class=" text-start">
+                            <label for="txtPrice" class="form-label">Item Price</label>
+                            <input type="text" class="form-control" id="txtPrice" >
+                        </div>
+                        <div class=" text-start">
+                            <label for="txtQuantity" class="form-label">Item Quantity</label>
+                            <input type="text" class="form-control" id="txtQuantity" >
+                        </div>
+
+
+                        <button type="button " class="btn btn-danger mt-3">Save</button>
+                        <button type="button " class="btn btn-warning mt-3">Update</button>
+                        <button type="button " class="btn btn-info mt-3">Clear</button>
+                        <button type="button " class="btn btn-success mt-3">GetAll</button>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!--        search-------------------------------------------------------------------------------------------------->
+            <div class="col mt-5">
+
+                <div class="card border border-1 " style="max-width: 25rem; height: 280px;">
+                    <div class="card-header text-white bg-warning">Item Search</div>
+                    <div class="card-body m-3">
+                        <div class="form-floating mb-3">
+                            <input type="InputName" class="form-control" id="floatingInput" >
+                            <label for="floatingInput">Input Item Name/Code Here</label>
+                        </div>
+
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Name</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+
+                        <div class="btn-group mt-3 " role="group" aria-label="Basic mixed styles example">
+                            <button type="button" class="btn btn-danger">Delete</button>
+                            <button type="button" class="btn btn-warning">Details</button>
+                            <button type="button" class="btn btn-success">Clear</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--table---------------------------------------------------------------------------------------------------------------------->
+            <table class="table mt-5 border border-3">
+                <thead>
+                <tr>
+                    <th scope="col">Item Code</th>
+                    <th scope="col">Item Name</th>
+                    <th scope="col">Item Price</th>
+                    <th scope="col">Item Quntity</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">I001</th>
+                    <td>Chocolate</td>
+                    <td>400.00</td>
+                    <td>40</td>
+                </tr>
+                <tr>
+                    <th scope="row">I002</th>
+                    <td>Biscuit</td>
+                    <td>100.00</td>
+                    <td>30</td>
+                </tr>
+
+                </tbody>
+            </table>
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+</main>
+
+
+<!--order------------------------------------------------------------------------------------------------------------------>
+<main class="container-fluid " id="orderContent">
+    <!--Desc Nav----------------------------------------------------------------------------------------->
+    <nav class="navbar bg-body-tertiary" >
+        <div class="container-fluid" style="height:1px">
+            <a class="navbar-brand" href="#">
+                <img src="assests/images/cart.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                Customer
+            </a>
+        </div>
+    </nav>
+
+
+    <!--invoice------------------------------------------------------------------------------------------------------->
+    <div class="container text-center  mt-5 border border-3">
+        <!--    //-->
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Order</li>
+            </ol>
+        </nav>
+
+        <!--DESC-->
+        <div class="row align-items-start">
+            <div class="col mt-5">
+
+                <div class="card border border-1 " style="max-width: 25rem; height: 280px;">
+                    <div class="card-header text-white bg-success">Invoice Details</div>
+                    <div class="card-body m-3">
+                        <form>
+                            <div class="row">
+                                <div class="col">
+                                    <input type="text" class="form-control mb-2" placeholder="Order Id" aria-label="First name">
+                                </div>
+                                <div class="col">
+                                    <input type="Date" class="form-control mb-2" placeholder="Last name" aria-label="Last name">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>C001</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                                <div class="col">
+                                    <input type="text" class="form-control mb-2" placeholder="Customer ID" aria-label="Last name">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <input type="text" class="form-control mb-2" placeholder="Name" aria-label="First name">
+                                </div>
+                                <div class="col">
+                                    <input type="text" class="form-control mb-2" placeholder="Salary" aria-label="Last name">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <input type="text" class="form-control mb-2" placeholder="Address" aria-label="First name">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col mt-5">
+
+
+                <!--Item Select---------------------------------------------------------------------------------------------------------------->
+                <div class="card border border-1 " style="max-width: 25rem; height: 280px;">
+                    <div class="card-header text-white bg-warning">Item Select</div>
+                    <div class="card-body m-3">
+                        <form>
+                            <div class="row">
+                                <div class="col">
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>C001</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                                <div class="col">
+                                    <input type="text" class="form-control mb-2" placeholder="Item Code" aria-label="Last name">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <input type="text" class="form-control mb-2" placeholder="Item Name" aria-label="First name">
+                                </div>
+                                <div class="col">
+                                    <input type="text" class="form-control mb-2" placeholder="Price" aria-label="Last name">
+                                </div>
+                                <div class="col">
+                                    <input type="text" class="form-control mb-2" placeholder="QtyOnH" aria-label="Last name">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <input type="text" class="form-control mb-3" placeholder="Order QTY" aria-label="First name">
+                                </div>
+                            </div>
+
+                            <button type="button" class="btn btn-danger btn-sm">Add Item</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+            <!--        item total------------------------------------------------------------------------------------------------------------->
+            <div class="col mt-5" style="max-width: 25rem; height: 180px;">
+                <div class="card" >
+                    <div class="card-body">
+                        <h5 class="card-title">Total</h5>
+                        <h5 class="card-title">Sub Total</h5>
+                        <div class="row">
+                            <div class="col">
+                                <input type="text" class="form-control mb-2" placeholder="Cash" aria-label="Cash">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control mb-2" placeholder="Discount" aria-label="Discount">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <input type="text" class="form-control mb-2" placeholder="Balance" aria-label="Balance">
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-info btn-sm">Purchase</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--table---------------------------------------------------------------------------------------------------------->
+            <table class="table mt-5 border border-3">
+                <thead >
+                <tr class="table">
+                    <th scope="col">Item code</th>
+                    <th scope="col">Item Name</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Quantity</th>
+                    <th scope="col">Total</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">I001</th>
+                    <td>Chocolate</td>
+                    <td>400.00</td>
+                    <td>40</td>
+                    <td>1000.00</td>
+                </tr>
+                <tr>
+                    <th scope="row">C002</th>
+                    <td>Biscuit</td>
+                    <td>100.00</td>
+                    <td>30</td>
+                    <td>500.00</td>
+                </tr>
+                </tbody>
+            </table>
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+</main>
+
+
+<script src="assets/js/bootstrap.min.js"></script>
+
+<script>
+    // select all contents
+    let dash = document.querySelector("#dashboardContent");
+    let customer = document.querySelector("#customerContent");
+    let item = document.querySelector("#itemContent");
+    let order = document.querySelector("#orderContent");
+
+    //select all the link and bind click events
+    let lnkHome = document.querySelector("#lnkHome");
+    let lnkCustomer = document.querySelector("#lnkCustomer");
+    let lnkItem = document.querySelector("#lnkItem");
+    let lnkOrder = document.querySelector("#lnkOrders");
+
+    dash.style.display = 'block';
+    customer.style.display = 'none';
+    item.style.display = 'none';
+    order.style.display = 'none';
+
+    lnkHome.addEventListener("click",function (){
+        dash.style.display = 'block';
+        customer.style.display = 'none';
+        item.style.display = 'none';
+        order.style.display = 'none';
+    })
+
+    lnkCustomer.addEventListener("click",function (){
+        dash.style.display = 'none';
+        customer.style.display = 'block';
+        item.style.display = 'none';
+        order.style.display = 'none';
+    })
+
+    lnkItem.addEventListener("click",function (){
+        dash.style.display = 'none';
+        customer.style.display = 'none';
+        item.style.display = 'block';
+        order.style.display = 'none';
+    })
+
+    lnkOrder.addEventListener("click",function (){
+        dash.style.display = 'none';
+        customer.style.display = 'none';
+        item.style.display = 'none';
+        order.style.display = 'block';
+    })
+
+
+
+
+
+</script>
+
+</body>
+</html>
