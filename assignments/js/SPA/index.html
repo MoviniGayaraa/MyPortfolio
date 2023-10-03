@@ -77,7 +77,7 @@
         <!--    //-->
         <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item" id="lnkCustomerHome"><a href="#">Home</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Customer</li>
             </ol>
         </nav>
@@ -92,24 +92,24 @@
                     <div class="card-header text-white bg-success">Customer Details</div>
                     <div class="card-body m-3">
                         <div class=" text-start">
-                            <label for="txtID" class="form-label">Customer ID</label>
-                            <input type="text" class="form-control" id="txtIDNumber" >
+                            <label for="txtCustomerID" class="form-label">Customer ID</label>
+                            <input type="text" class="form-control" id="txtCustomerID" >
                         </div>
                         <div class=" text-start">
-                            <label for="txtName" class="form-label">Customer Name</label>
-                            <input type="text" class="form-control" id="txtCusNmae" >
+                            <label for="txtCustomerName" class="form-label">Customer Name</label>
+                            <input type="text" class="form-control" id="txtCustomerName" >
                         </div>
                         <div class=" text-start">
-                            <label for="txtAddress" class="form-label">Customer Address</label>
-                            <input type="text" class="form-control" id="txtAddress" >
+                            <label for="txtCustomerAddress" class="form-label">Customer Address</label>
+                            <input type="text" class="form-control"  id="txtCustomerAddress" >
                         </div>
                         <div class=" text-start">
-                            <label for="txtSalary" class="form-label">Customer Salary</label>
-                            <input type="text" class="form-control" id="txtsalary" >
+                            <label for="txtCustomerSalary" class="form-label">Customer Salary</label>
+                            <input type="text" class="form-control" id="txtCustomerSalary" >
                         </div>
 
 
-                        <button type="button " class="btn btn-danger mt-3">Save</button>
+                        <button type="button " class="btn btn-danger mt-3 "id="btnCustomer">Save</button>
                         <button type="button " class="btn btn-warning mt-3">Update</button>
                         <button type="button " class="btn btn-info mt-3">Clear</button>
                         <button type="button " class="btn btn-success mt-3">GetAll</button>
@@ -202,7 +202,7 @@
         <!--    //-->
         <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item" id="lnkItemHome"><a href="#">Home</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Item</li>
             </ol>
         </nav>
@@ -215,12 +215,12 @@
                     <div class="card-header text-white bg-success">Item Details</div>
                     <div class="card-body m-3">
                         <div class=" text-start">
-                            <label for="txtID" class="form-label">Item Code</label>
-                            <input type="text" class="form-control" id="txtID" >
+                            <label for="txtItemID" class="form-label">Item Code</label>
+                            <input type="text" class="form-control" id="txtItemID"  >
                         </div>
                         <div class=" text-start">
-                            <label for="txtName" class="form-label">Item Name</label>
-                            <input type="text" class="form-control" id="txtName" >
+                            <label for="txtItemName" class="form-label">Item Name</label>
+                            <input type="text" class="form-control" id="txtItemName" >
                         </div>
                         <div class=" text-start">
                             <label for="txtPrice" class="form-label">Item Price</label>
@@ -232,7 +232,7 @@
                         </div>
 
 
-                        <button type="button " class="btn btn-danger mt-3">Save</button>
+                        <button type="button " class="btn btn-danger mt-3" #btnItem>Save</button>
                         <button type="button " class="btn btn-warning mt-3">Update</button>
                         <button type="button " class="btn btn-info mt-3">Clear</button>
                         <button type="button " class="btn btn-success mt-3">GetAll</button>
@@ -327,7 +327,7 @@
         <!--    //-->
         <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item" id="lnkOrderHome"><a href="#">Home</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Order</li>
             </ol>
         </nav>
@@ -492,7 +492,7 @@
 
 <script>
     // select all contents
-    let dash = document.querySelector("#dashboardContent");
+    let home = document.querySelector("#dashboardContent");
     let customer = document.querySelector("#customerContent");
     let item = document.querySelector("#itemContent");
     let order = document.querySelector("#orderContent");
@@ -502,43 +502,108 @@
     let lnkCustomer = document.querySelector("#lnkCustomer");
     let lnkItem = document.querySelector("#lnkItem");
     let lnkOrder = document.querySelector("#lnkOrders");
+    let lnkCustomerHome = document.querySelector("#lnkCustomerHome");
+    let lnkItemHome = document.querySelector("#lnkItemHome");
+    let lnkOrderHome = document.querySelector("#lnkOrderHome");
 
-    dash.style.display = 'block';
+    home.style.display = 'block';
     customer.style.display = 'none';
     item.style.display = 'none';
     order.style.display = 'none';
 
     lnkHome.addEventListener("click",function (){
-        dash.style.display = 'block';
+        home.style.display = 'block';
         customer.style.display = 'none';
         item.style.display = 'none';
         order.style.display = 'none';
     })
 
     lnkCustomer.addEventListener("click",function (){
-        dash.style.display = 'none';
+        home.style.display = 'none';
         customer.style.display = 'block';
         item.style.display = 'none';
         order.style.display = 'none';
     })
 
     lnkItem.addEventListener("click",function (){
-        dash.style.display = 'none';
+      home.style.display = 'none';
         customer.style.display = 'none';
         item.style.display = 'block';
         order.style.display = 'none';
     })
 
     lnkOrder.addEventListener("click",function (){
-        dash.style.display = 'none';
+        home.style.display = 'none';
         customer.style.display = 'none';
         item.style.display = 'none';
         order.style.display = 'block';
     })
 
 
+    lnkCustomerHome.addEventListener("click",function (){
+        home.style.display = 'block';
+        customer.style.display = 'none';
+        item.style.display = 'none';
+        order.style.display = 'none';
+    })
 
+    lnkItemHome.addEventListener("click",function (){
+        home.style.display = 'block';
+        customer.style.display = 'none';
+        item.style.display = 'none';
+        order.style.display = 'none';
+    })
 
+    lnkOrderHome.addEventListener("click",function (){
+        home.style.display = 'block';
+        customer.style.display = 'none';
+        item.style.display = 'none';
+        order.style.display = 'none';
+    })
+//---------------------------------------------------------------------------------------------------------------
+//     //Customer Mange
+//     let btnSave= document.querySelector("#btnCustomer");
+//
+//     //select 4 text fields
+//     let txtID=document.querySelector("#txtCustomerID");
+//     let txtName=document.querySelector("#txtCustomerName");
+//     let txtAddress=document.querySelector("#txtCustomerAddress");
+//     let txtSalary=document.querySelector("#txtCustomerSalary");
+//
+//     var customers=[];
+//
+//     btnSave.addEventListener("click",function (){
+//         txtID.value;
+//         txtName.value;
+//         txtAddress.value;
+//         txtSalary.value;
+//         console.log(txtID.value,txtName.value,txtAddress.value,txtSalary.value);
+//
+//     });
+// //-------------------------------------------------------------------------------------------------------------------------------------------------
+//     //Item Mange
+//     let btnSave= document.querySelector("#btnItem");
+//
+//     //select 4 text fields
+//     let txtID=document.querySelector("#txtCustomerID");
+//     let txtName=document.querySelector("#txtCustomerName");
+//     let txtAddress=document.querySelector("#txtCustomerAddress");
+//     let txtSalary=document.querySelector("#txtCustomerSalary");
+//
+//     var customers=[];
+//
+//     btnSave.addEventListener("click",function (){
+//         txtID.value;
+//         txtName.value;
+//         txtAddress.value;
+//         txtSalary.value;
+//         console.log(txtID.value,txtName.value,txtAddress.value,txtSalary.value);
+//
+//     });
+//
+//
+//
+//
 
 </script>
 
