@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+
+  <style>
+    body{
+      background-color:#e9e7e6 ;
+      overflow-x: hidden;
+    }
+    section>section:nth-child(1){
+      position: relative;
+      top: 200px;
+      left: 40vh;
+      top: 30vh;
+
+    }
+    section>section:nth-child(1)>div{
+      width: 150px;
+      height: 100px;
+      font-size: 23px;
+      display: inline-block;
+
+    }
+    img{
+      width: 160px;
+      height: 160px;
+      position: relative;
+      left: -12vh;
+      top: 4vh;
+    }
+
+    .home{
+      width: 400px;
+      height: 400px;
+      position: relative;
+      left: 80vw;
+      top: 3vh;
+    }
+
+
+    #line-2{
+      width: 880px;
+      height: 1px;
+      position: relative;
+      display: inline-block;
+      top: 3vh;
+      background-color: #8c94a4;
+      left: -4vw;
+
+    }
+
+  </style>
+</head>
+<body>
+<section>
+  <section>
+    <div>
+      <div></div>
+      <img src="assest/man.gif">
+    </div>
+    <div>
+      <div></div>
+      <img src="assest/man.gif">
+    </div>
+    <div>
+      <div></div>
+      <img src="assest/man.gif">
+    </div>
+    <div>
+      <div></div>
+      <img src="assest/man.gif">
+    </div>
+    <div>
+      <div></div>
+      <img src="assest/man.gif">
+    </div>
+    <div>
+      <div></div>
+      <img src="assest/man.gif">
+    </div>
+    <div id="line-2"></div>
+
+  </section>
+
+  <section>
+    <div></div>
+    <div></div>
+  </section>
+
+</section>
+<div class="home"><img src="assest/home.gif"></div>
+
+
+<script>
+  var letters = new Array("A","B","C","D","E","F");
+  var divs = document.querySelectorAll(" section>section:nth-child(1)>div>div");
+
+  setInterval(prograss,600);
+
+  function prograss(){
+    for (let i = 0; i < letters.length; i++) {
+      divs[i].innerText=letters[i];
+    }
+    let lastValue = letters.pop();
+    letters.unshift(lastValue);
+  }
+
+</script>
+</body>
+</html>

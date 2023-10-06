@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case_1</title>
+    <meta name="viewport" content="width=device-width initial, scale=1.0">
+    <link rel="stylesheet" href="../../CSS/Case_1/assets/necolas.github.io_normalize.css_8.0.1_normalize.css">
+    <style>
+        body{
+            background-color:#36454f;
+        }
+
+        body>h1{
+
+
+        }
+        section {
+            position: relative;
+            left: 28%;
+            display: inline-block;
+        }
+        .div{
+            width: 636px;
+            height: 2px;
+            background-color: white;
+            display: block;
+            left: 28%;
+        }
+        #line-1 {
+            position: relative;
+            top: 228px;
+        }
+        #line-2{
+            position: relative;
+            top: 310px;
+        }
+        div{
+            width: 100px;
+            height: 50px;
+            border-radius: 6px;
+            display: inline-block;
+            position: relative;
+            left: 2%;
+        }
+        #middle{
+            top: 298px;
+            left: 1%;
+        }
+        #div1{
+            top: 214px;
+        }
+        #div5{
+            top: 383px;
+            left: 1%;
+        }
+    </style>
+</head>
+
+<body>
+
+<section>
+
+    <div id="div1"></div>
+    <section id="middle">
+        <div id="div2"></div>
+        <div id="div3"></div>
+        <div id="div4"></div>
+        <div id="div6"></div>
+    </section>
+    <div id="div5"></div>
+</section>
+<div id="line-1" class="div"></div>
+<div id="line-2" class="div"></div>
+
+<script>
+    var colors = new Array("plum","red","green","blue","yellow","pink");
+    let divs = document.querySelectorAll("section>div");
+
+    setInterval(prograss,400);
+
+    function prograss(){
+
+        for (let i = 0; i <colors.length; i++) {
+            divs[i].style.background=colors[i];
+        }
+
+        let lastvalue = colors.pop();
+        colors.unshift(lastvalue);
+    }
+</script>
+</body>
+</html>

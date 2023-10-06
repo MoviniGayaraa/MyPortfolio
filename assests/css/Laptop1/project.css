@@ -79,7 +79,7 @@ section:nth-child(7)>img:hover{
     position: absolute;
     top: 43vh;
     /*top: 45vh;*/
-    right: 3vw;
+    right: 2vw;
     /*right: -8vw;*/
     margin: auto;
 
@@ -94,7 +94,7 @@ section:nth-child(7)>img:hover{
     position: absolute;
     top: 43vh;
     right: 0;
-    left: 7vw;
+    left: 9vw;
     /*left: 0;*/
     margin: auto;
 
