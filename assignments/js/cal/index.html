@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width initial-scale=1 user-scalable=no">
+    <style>
+        body{
+            height: 100vh;
+            width: 100vw;
+            background-image: url("assets/img/abstract-smoth-blue-motion-lines-background.jpg");
+            overflow-x: hidden;
+            overflow-y: hidden;
+        }
+        section>div:nth-child(2){
+            margin-top: 1rem;
+        }
+        .container{
+            background-color: #9e9e9e;
+        }
+        section>div>button:hover{
+            background-color: #edc2fd;
+
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+<main>
+    <section class="container mt-5" style="width: 500px; height: 580px">
+
+        <div class="row bs-secondary-bg mb-0 pt-3 ms-3 me-3 gap-3" style="height: 100px ">
+            <button id="ce" class="col-2 bg-danger-subtle text-black border-white">C</button>
+            <input id="display" type="text" class="bg-dark text-white border-bottom border-white col text-end" style="font-size: 50px"readonly>
+        </div>
+
+        <div class="row bs-secondary-bg gap-2 mb-3 ms-3 me-3     margin-top: 1rem " style="height: 80px; font-size: 30px ">
+            <button id="7" class="col bs-tertiary-bg text-black border-white  " >7</button>
+            <button id="8" class="col bs-tertiary-bg text-black border-white">8</button>
+            <button id="9" class="col bs-tertiary-bg text-black border-white">9</button>
+            <button id="add" class="col bg-danger-subtle text-black border-white">+</button>
+        </div>
+
+        <div class="row bs-secondary-bg gap-2 mb-3 ms-3 me-3 " style="height: 80px; font-size: 30px">
+            <button id="4" class="col bs-tertiary-bg text-black border-white" >4</button>
+            <button id="5" class="col bs-tertiary-bg text-black border-white">5</button>
+            <button id="6" class="col bs-tertiary-bg text-black border-white">6</button>
+            <button id="substract" class="col bg-danger-subtle text-black border-white">-</button>
+        </div>
+
+        <div class="row bs-secondary-bg gap-2 mb-3 ms-3 me-3 " style="height: 80px; font-size: 30px">
+            <button id="1" class="col bs-tertiary-bg text-black border-white" >1</button>
+            <button id="2" class="col bs-tertiary-bg text-black border-white">2</button>
+            <button id="3" class="col bs-tertiary-bg text-black border-white">3</button>
+            <button id="divide" class="col bg-danger-subtle text-black border-white">/</button>
+        </div>
+
+        <div class="row bs-secondary-bg gap-2 mb-3 ms-3 me-3 " style="height: 80px; font-size: 30px">
+            <button id="0" class="col bs-tertiary-bg text-black border-white" >0</button>
+            <button id="pulstop" class="col bs-tertiary-bg text-black border-white">.</button>
+            <button id="equal" class="col bg-success-subtle text-black border-white">=</button>
+            <button id="multiply" class="col bg-danger-subtle text-black border-white">*</button>
+        </div>
+
+    </section>
+</main>
+
+<script src="assets/jquery-3.7.0.min.js"></script>
+<script>
+    let value1;
+    let value2;
+    let method;
+    let total;
+
+    $('#display').val(0);
+    $('#display2').val('input');
+
+    $('#ce').click(function () {
+        $('#display').val(0);
+        $('#display2').val('input');
+    });
+
+    $('#1').click(function () {
+        //$(this).css("background-color","yellow");
+        if ($("#display").val() == 0)
+            $("#display").val($(this).text());
+        else
+            $("#display").val($(
+                "#display").val() + $(this).text());
+    });
+
+    $('#2').click(function () {
+        if ($("#display").val() == 0)
+            $("#display").val($(this).text());
+        else
+            $("#display").val($(
+                "#display").val() + $(this).text());
+    });
+
+    $('#3').click(function () {
+        if ($("#display").val() == 0)
+            $("#display").val($(this).text());
+        else
+            $("#display").val($(
+                "#display").val() + $(this).text());
+    });
+
+    $('#4').click(function () {
+        if ($("#display").val() == 0)
+            $("#display").val($(this).text());
+        else
+            $("#display").val($(
+                "#display").val() + $(this).text());
+    });
+
+    $('#5').click(function () {
+        if ($("#display").val() == 0)
+            $("#display").val($(this).text());
+        else
+            $("#display").val($(
+                "#display").val() + $(this).text());
+    });
+
+    $('#6').click(function () {
+        if ($("#display").val() == 0)
+            $("#display").val($(this).text());
+        else
+            $("#display").val($(
+                "#display").val() + $(this).text());
+    });
+
+    $('#7').click(function () {
+        if ($("#display").val() == 0)
+            $("#display").val($(this).text());
+        else
+            $("#display").val($(
+                "#display").val() + $(this).text());
+    });
+
+    $('#8').click(function () {
+        if ($("#display").val() == 0)
+            $("#display").val($(this).text());
+        else
+            $("#display").val($(
+                "#display").val() + $(this).text());
+    });
+
+    $('#9').click(function () {
+        if ($("#display").val() == 0)
+            $("#display").val($(this).text());
+        else
+            $("#display").val($(
+                "#display").val() + $(this).text());
+    });
+
+    $('#0').click(function () {
+        if ($("#display").val() == 0)
+            $("#display").val($(this).text());
+        else
+            $("#display").val($(
+                "#display").val() + $(this).text());
+    });
+
+    $('#pulstop').click(function () {
+        if ($("#display").val() == 0)
+            $("#display").val($(this).text());
+        else
+            $("#display").val($(
+                "#display").val() + $(this).text());
+    });
+
+    $('#add').click(function () {
+        value1=$('#display').val();
+
+        $('#display').val(0);
+
+         method=$(this).text();
+
+         $('#display2').val(value1+method);
+    })
+
+    $('#substract').click(function () {
+        value1=$('#display').val();
+
+        $('#display').val(0);
+
+        method=$(this).text();
+        $('#display2').val(value1+method);
+    })
+
+    $('#multiply').click(function () {
+        value1=$('#display').val();
+
+        $('#display').val(0);
+
+        method=$(this).text();
+        $('#display2').val(value1+method);
+    })
+
+    $('#divide').click(function () {
+        value1=$('#display').val();
+
+        $('#display').val(0);
+
+        method=$(this).text();
+        $('#display2').val(value1+method);
+    })
+
+    $('#equal').click(function () {
+
+         value2=$('#display').val();
+
+        if (method=='+'){
+            total=parseFloat(value1)+parseFloat(value2);
+        }
+
+         if (method=='-'){
+            total=parseFloat(value1)-parseFloat(value2);
+        }
+
+        if (method=='*'){
+            total=parseFloat(value1)*parseFloat(value2);
+        }
+
+        if (method=='/'){
+            total=parseFloat(value1)/parseFloat(value2);
+        }
+
+        $('#display').val(total);
+        $('#display2').val(value1+method+value2);
+    })
+
+</script>
+</body>
+</html>
