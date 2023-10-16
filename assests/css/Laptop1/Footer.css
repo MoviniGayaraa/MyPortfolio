@@ -6,3 +6,63 @@ footer{
     padding-right: 14vw;
     background-color: black;
 }
+
+footer>img{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.mainFooter{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: 0px 0px 15px 5px black;
+}
+.bottomFooter{
+    height: 0;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    transition-duration: 4s;
+    transition-property: all;
+    opacity: 0;
+    background-color:rgba(0, 0, 0, 0.5);
+}
+.mainFooter:hover .bottomFooter{
+    height: 100%;
+    opacity: 1;
+}
+.topFooter{
+    height: 0;
+    width: 100%;
+    top: 0;
+    position: absolute;
+    transition-duration: 4s;
+    transition-property: all;
+    opacity: 0;
+    background-color:rgba(0, 0, 0, 0.01);
+}
+.mainFooter:hover .topFooter{
+    height: 100%;
+    opacity: 1;
+}
+.topFooter-img{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
