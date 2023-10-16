@@ -1,0 +1,17 @@
+
+#navbarText a {
+    color: black;
+}
+
+#navbarText a:hover {
+    color: darkgreen;
+}
+
+body > section:nth-child(1)>section{
+    width: 95vw;
+    height: 85vh;
+}
+
+main section>button>i{
+
+}

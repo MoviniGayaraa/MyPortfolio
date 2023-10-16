@@ -5,6 +5,7 @@
     <title>cssFrameWork</title>
     <link rel="stylesheet" href="assests/bootsrap/css/bootstrap.css">
     <script src="assests/bootsrap/js/bootstrap.js"></script>
+    <style>body{overflow-x: hidden;}</style>
 </head>
 <body>
 <!--Nav Bar--------------------------------------------------------------------------------------------------------------------------------->
@@ -28,17 +29,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="order.html">Order</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Options
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="customer.html">Customer Manage</a></li>
-                        <li><a class="dropdown-item" href="Item.html">Item Manage</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="order.html">Order Manage</a></li>
-                    </ul>
-                </li>
+
 
             </ul>
             <form class="d-flex" role="search">
@@ -51,9 +42,9 @@
 </nav>
 
 
-<!--Desc Nav-------------------------------------------------------------------------------------------------------------------------------->
+<!--Desc Nav----------------->
 <nav class="navbar bg-body-tertiary" >
-    <div class="container-fluid" style="height:1px">
+    <div class="container-fluid"   mt-2 style="height:1px">
         <a class="navbar-brand" href="#">
             <img src="assests/images/item4.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
             Item
@@ -61,114 +52,85 @@
     </div>
 </nav>
 
+<!--Search------------------>
+<section>
+    <section class="row p-5" style="height: 100%">
+        <section class="col-lg-8 col-12  bg-body" style="height: 100%" class=" mt-8 ">
 
+            <!--search Bar-->
+            <section class="col-lg-5 col-12 vh-75 bg-body">
+                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item" id="lnkItemHome"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Item</li>
+                    </ol>
+                </nav>
 
-
-<!--ItemDetail--------------------------------------------------------------------------------------------------------------------->
-<div class="container text-center  mt-5 border border-3">
-    <!--    //-->
-    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="Home.html">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Item</li>
-        </ol>
-    </nav>
-
-    <!--DESC-->
-    <div class="row align-items-start">
-        <div class="col mt-5">
-
-            <div class="card border border-1 " style="max-width: 25rem; height: 420px;">
-                <div class="card-header text-white bg-success">Item Details</div>
-                <div class="card-body m-3">
-                    <div class=" text-start">
-                        <label for="txtID" class="form-label">Item Code</label>
-                        <input type="text" class="form-control" id="txtID" >
-                    </div>
-                    <div class=" text-start">
-                        <label for="txtName" class="form-label">Item Name</label>
-                        <input type="text" class="form-control" id="txtName" >
-                    </div>
-                    <div class=" text-start">
-                        <label for="txtPrice" class="form-label">Item Price</label>
-                        <input type="text" class="form-control" id="txtPrice" >
-                    </div>
-                    <div class=" text-start">
-                        <label for="txtQuantity" class="form-label">Item Quantity</label>
-                        <input type="text" class="form-control" id="txtQuantity" >
-                    </div>
-
-
-                    <button type="button " class="btn btn-danger mt-3">Save</button>
-                    <button type="button " class="btn btn-warning mt-3">Update</button>
-                    <button type="button " class="btn btn-info mt-3">Clear</button>
-                    <button type="button " class="btn btn-success mt-3">GetAll</button>
-
+                <div class="text-center mt-5 p-1" style="background-color: darkgreen ; color:white;">
+                    Search Item
                 </div>
-            </div>
-
-        </div>
-
-        <!--        search-------------------------------------------------------------------------------------------------->
-        <div class="col mt-5">
-
-            <div class="card border border-1 " style="max-width: 25rem; height: 280px;">
-                <div class="card-header text-white bg-warning">Item Search</div>
-                <div class="card-body m-3">
-                    <div class="form-floating mb-3">
-                        <input type="InputName" class="form-control" id="floatingInput" >
-                        <label for="floatingInput">Input Item Name/Code Here</label>
-                    </div>
-
-                    <select class="form-select" aria-label="Default select example">
-                        <option selected>Name</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                    </select>
-
-                    <div class="btn-group mt-3 " role="group" aria-label="Basic mixed styles example">
-                        <button type="button" class="btn btn-danger">Delete</button>
-                        <button type="button" class="btn btn-warning">Details</button>
-                        <button type="button" class="btn btn-success">Clear</button>
+                <div class="input-group row mt-5 mb-1">
+                    <div class="col-11">
+                        <input class="form-control" type="search" id="txtSearchItem">
                     </div>
                 </div>
-            </div>
+            </section>
+        </section>
 
+        <!--ItemDetail------------>
+        <section class="col-lg-4 col-12 vh-75 bg-body">
+            <div class="text-center mt-2 p-1" style="background-color: darkgreen ; color:white;">
+                Manage Item
+            </div>
+            <div class="d-flex flex-column">
+                <div class="row mt-2 ">
+                    <div class="form-group">
+                        <label class="col-4 mt-2">Code</label>
+                        <input class="form-control col-7 mt-2" id="txtItemCode" type="text">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-4 mt-2">Item Name</label>
+                        <input class="form-control col-7 mt-2" id="txtItemName" type="text">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-4 mt-2">Price</label>
+                        <input class="form-control col-7 mt-2" id="txtItemPrice" type="text">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-4 mt-2">Qty</label>
+                        <input class="form-control col-7 mt-2" id="txtItemQTY" type="text">
+                    </div>
+                </div>
+                <div class="mt-2 btn-group mb-2">
+                    <button class="btn btn-sm btn-success" id="btnSaveItem" type="button" style="margin-right: 5px">Save</button>
+                    <button class="btn btn-sm btn-danger" id="btnDeleteItem" type="button" style="margin-right: 5px">Delete</button>
+                    <button class="btn btn-sm btn-warning" id="btnUpdateItem" type="button" style="margin-right: 5px; color: white">Update</button>
+                    <button class="btn btn-sm btn-info" id="btnRefreshItem" type="button" style="margin-right: 5px">Get All</button>
+                    <button class="btn btn-sm btn-success" id="btnCancelItem" type="button">Clear</button>
+                </div>
+            </div>
+        </section>
+
+        <!--table-->
+        <div class="table-responsive ">
+            <table class="table table-hover">
+                <thead class="table-success">
+                <tr>
+                    <th scope="col">Code</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Qty</th>
+                </tr>
+                </thead>
+                <tbody class="table-group-divider" id="tblItem">
+
+                </tbody>
+            </table>
         </div>
 
-<!--table---------------------------------------------------------------------------------------------------------------------->
-        <table class="table mt-5 border border-3">
-            <thead>
-            <tr>
-                <th scope="col">Item Code</th>
-                <th scope="col">Item Name</th>
-                <th scope="col">Item Price</th>
-                <th scope="col">Item Quntity</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <th scope="row">I001</th>
-                <td>Chocolate</td>
-                <td>400.00</td>
-                <td>40</td>
-            </tr>
-            <tr>
-                <th scope="row">I002</th>
-                <td>Biscuit</td>
-                <td>100.00</td>
-                <td>30</td>
-            </tr>
-
-            </tbody>
-        </table>
-
-
-    </div>
-</div>
-
-
-
-
+    </section>
+</section>
 </body>

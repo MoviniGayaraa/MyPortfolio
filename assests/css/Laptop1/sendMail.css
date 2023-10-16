@@ -1,6 +1,6 @@
 section:nth-child(11){
     position: relative;
-    height: 60vh;
+    height: 56vh;
     width: 72vw;
     padding-left: 14vw;
     padding-right: 14vw;
@@ -153,3 +153,5 @@ section:nth-child(11)>div:nth-child(2)>form{
     left: 58vw;
     margin: auto;
 }
+
+

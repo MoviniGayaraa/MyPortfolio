@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width initial-scale=1" name="viewport">
+    <title>POS System</title>
+    <link href="assets/css/normalize.css" rel="stylesheet">
+    <link href="assets/css/common-styles.css" rel="stylesheet">
+    <link href="assets/framework/css/bootstrap.css" rel="stylesheet">
+    <script src="assets/framework/js/bootstrap.js"></script>
+    <link href="assets/fontawsome/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!----------------navbar----------------------------------------------------------------------------------------------->
+<header id="navigation-bar">
+    <nav class="navbar navbar-expand-lg z-1" style="background-color: white; ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">POS</a>
+            <button aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation"
+                    class="navbar-toggler"
+                    data-bs-target="#navbarText" data-bs-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="goHome()">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                           onclick="mngCustomer()">Customer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="mngStore()">Item</a>
+                    </li>
+<!--                    <li class="nav-item">-->
+<!--                        <a class="nav-link" onclick="mngOrder()">Options</a>-->
+<!--                    </li>-->
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="placeOrderForm()">Order</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <button onclick="logoutBtn()" class="btn btn-outline-success" type="submit">sign Up</button>
+                    <button  onclick="logoutBtn()"class="btn btn-outline-success" type="submit">Log Out</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!------------- bar----------------------------------------------------------------------------------------------------->
+<div class="row "
+     style=" height: 100vh ; width: 100% ; position: absolute; top: 0; bottom: 0; left: 0; right: 0 ;
+     margin: auto; z-index: -100;">
+    <div class="col-12 " style="height: 85%; background-color: white"></div>
+    <div class="col-12 " style="height: 15%; background-color: white;"></div>
+</div>
+
+<!---------Login------------------------------------------------------------------------------------------------------->
+<section class=" position-absolute top-50 start-50 translate-middle bg-body w-25 " id="login" style="height: 60%">
+
+    <section class="position-relative  w-100 h-50">
+        <img class="position-absolute start-50 top-50 translate-middle" src="assets/images/homePic%20(2).png" width="60%">
+    </section>
+
+    <section class="position-relative w-100 h-50">
+        <div class="container position-absolute start-50 top-50 translate-middle">
+            <form method="post">
+                <section class="mb-4">
+                    <div class="form-group row m-1">
+                        <label class="col-md-4 col-12" for="username">Username </label>
+                        <input class="form-control col-md-8 col-12" id="username" name="username" type="text">
+                    </div>
+                    <div class="form-group row m-1">
+                        <label class="col-sm-4 col-12" for="password" style="color: #1E1E1E">Password </label>
+                        <input class="form-control  col-sm-8 col-12" id="password" name="password" type="password">
+                    </div>
+                </section>
+                <input class="form-control btn w-100 " onclick="loginBtn()"
+                       style="background-color:#191526; color: rgb(255,255,255);" type="button" value="Login">
+            </form>
+        </div>
+    </section>
+</section>
+
+<!----------Home------------------------------------------------------------------------------------------------------->
+<main  id="home">
+    <img src="assets/images/homePic%20(2).png" class="img-fluid" style="width: 100vw ">
+</main>
+
+<!--------------------Customer------------------------------------------------------------------------------------------>
+<main class="container-fluid" id="manage-customer">
+
+    <!--Desc Nav------------------------------------------------->
+    <nav class="navbar bg-body-tertiary" >
+        <div class="container-fluid"  mt-2 style="height:1px">
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/man.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                Customer
+            </a>
+        </div>
+    </nav>
+
+    <!--search---------------------------------------------------->
+    <section>
+        <section class="row p-5" style="height: 100%"  >
+            <section class="col-lg-8 col-12  bg-body" style="height: 100%" class=" mt-8  ">
+
+                <!--search Detail-->
+                <section class="col-lg-5 col-12 vh-75 bg-body  ">
+                    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb"  >
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item" id="lnkCustomerHome"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Customer</li>
+                        </ol>
+                    </nav>
+
+                    <div class="text-center mt-5 p-1" style="background-color:darkgreen; color:white;">
+                        search Customer
+                    </div>
+                    <div class="input-group row mt-5 mb-1">
+                        <div class="col-11">
+                            <input class="form-control" id="txtSearchCus" type="search">
+                        </div>
+                    </div>
+                    </div>
+                </section>
+            </section>
+
+            <!--CustomerManage---->
+            <section class="col-lg-4 col-12 vh-75 bg-body ">
+                <div class="text-center mt-2 p-1" style="background-color:darkgreen; color:white;">
+                    Manage Customer
+                </div>
+                <div class="d-flex flex-column">
+                    <div class="row mt-2 ">
+                        <div class="form-group">
+                            <label class="col-4 mt-2">ID</label>
+                            <input class="form-control col-7 mt-2" id="txtCustomerID" type="text">
+                            <small id="invalidIdMessage" class="text-danger">Invalid ID</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-4 mt-2">Name</label>
+                            <input class="form-control col-7 mt-2" id="txtCustomerName" type="text">
+                            <small id="invalidNameMessage" class="text-danger">Invalid Name</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-4 mt-2">Address</label>
+                            <input class="form-control col-7 mt-2" id="txtCustomerAddress" type="text">
+                            <small id="invalidAddressMessage" class="text-danger">Invalid Address</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-4 mt-2">Salary</label>
+                            <input class="form-control col-7 mt-2" id="txtCustomerSalary" type="text">
+                            <small id="invalidSalaryMessage" class="text-danger">Invalid Salary</small>
+                        </div>
+
+                    </div>
+                    <div class="mt-2 btn-group mb-2" >
+                        <button class="btn btn-sm btn-success" id="btnSaveCustomer" type="button" style="margin-right: 5px">Save</button>
+                        <button class="btn btn-sm btn-danger" id="btnDeleteCustomer" type="button" style="margin-right: 5px">Delete</button>
+                        <button class="btn btn-sm btn-warning" id="btnUpdateCustomer" type="button" style="margin-right: 5px; color: white">Update</button>
+                        <button class="btn btn-sm btn-info" id="btnRefreshCustomer" type="button" style="margin-right: 5px">Get All</button>
+                        <button class="btn btn-sm btn-success" id="btnCancelCustomer" type="button">Clear</button>
+                    </div>
+                </div>
+            </section>
+
+           <!--table----------->
+            <div class="table-responsive  ">
+                <table class="table table-hover">
+                    <thead class="table-success">
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Address</th>
+                        <th scope="col">Salary</th>
+                    </tr>
+                    </thead>
+                    <tbody class="table-group-divider" id="tblCustomer">
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </section>
+</main>
+
+<!-------------------Item---------------------------------------------------------------------------------------------->
+<main class="container-fluid" id="mng-store">
+
+    <!--Desc Nav----------------->
+    <nav class="navbar bg-body-tertiary" >
+        <div class="container-fluid"   mt-2 style="height:1px">
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/item4.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                Item
+            </a>
+        </div>
+    </nav>
+
+    <!--Search------------------>
+    <section>
+        <section class="row p-5" style="height: 100%">
+            <section class="col-lg-8 col-12  bg-body" style="height: 100%" class=" mt-8 ">
+
+                <!--search Bar-->
+                <section class="col-lg-5 col-12 vh-75 bg-body">
+                    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item" id="lnkItemHome"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Item</li>
+                        </ol>
+                    </nav>
+
+                    <div class="text-center mt-5 p-1" style="background-color: darkgreen ; color:white;">
+                        Search Item
+                    </div>
+                    <div class="input-group row mt-5 mb-1">
+                        <div class="col-11">
+                            <input class="form-control" type="search" id="txtSearchItem">
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <!--ItemDetail------------>
+            <section class="col-lg-4 col-12 vh-75 bg-body">
+                <div class="text-center mt-2 p-1" style="background-color: darkgreen ; color:white;">
+                    Manage Item
+                </div>
+                <div class="d-flex flex-column">
+                    <div class="row mt-2 ">
+                        <div class="form-group">
+                            <label class="col-4 mt-2">Code</label>
+                            <input class="form-control col-7 mt-2" id="txtItemCode" type="text">
+                            <small id="invalidCodeMessage" class="text-danger">Invalid Code</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-4 mt-2">Item Name</label>
+                            <input class="form-control col-7 mt-2" id="txtItemName" type="text">
+                            <small id="invalidItemNameMessage" class="text-danger">Invalid Item Name</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-4 mt-2">Price</label>
+                            <input class="form-control col-7 mt-2" id="txtItemPrice" type="text">
+                            <small id="invalidItemPriceMessage" class="text-danger">Invalid Price</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-4 mt-2">Qty</label>
+                            <input class="form-control col-7 mt-2" id="txtItemQTY" type="text">
+                            <small id="invalidItemQTYMessage" class="text-danger">Invalid Qty</small>
+                        </div>
+                    </div>
+                    <div class="mt-2 btn-group mb-2">
+                        <button class="btn btn-sm btn-success" id="btnSaveItem" type="button" style="margin-right: 5px">Save</button>
+                        <button class="btn btn-sm btn-danger" id="btnDeleteItem" type="button" style="margin-right: 5px">Delete</button>
+                        <button class="btn btn-sm btn-warning" id="btnUpdateItem" type="button" style="margin-right: 5px; color: white">Update</button>
+                        <button class="btn btn-sm btn-info" id="btnRefreshItem" type="button" style="margin-right: 5px">Get All</button>
+                        <button class="btn btn-sm btn-success" id="btnCancelItem" type="button">Clear</button>
+                    </div>
+                </div>
+            </section>
+
+            <!--table-->
+            <div class="table-responsive ">
+                <table class="table table-hover">
+                    <thead class="table-success">
+                    <tr>
+                        <th scope="col">Code</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Qty</th>
+                    </tr>
+                    </thead>
+                    <tbody class="table-group-divider" id="tblItem">
+
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+    </section>
+</main>
+
+<!-----Order--->
+<main class="container-fluid" id="mng-orders"></main>
+
+<!-----------------Order----------------------------------------------------------------------------------------------->
+<main class="container-fluid" id="place-order">
+
+    <!--DescNav-------->
+    <nav class="navbar bg-body-tertiary" >
+        <div class="container-fluid" style="height:1px">
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/cart.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                Customer
+            </a>
+        </div>
+    </nav>
+
+    <!-- CustomerDtail-->
+    <section>
+        <section class="row p-5" style="height: 100%" class="mt-10">
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" >
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item" id="lnkOrderHome"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Order</li>
+                </ol>
+            </nav>
+
+            <!--CustomerDetail-->
+            <div class="col-lg-3 col-12 bg-body">
+
+                <div class="container row text-body-tertiary mt-1">
+                    <label class="col-6">Order ID: </label>
+                    <label class="col-6" id="GeneratedOrderID">000-001</label>
+                    <label class="col-6">Date: </label>
+                    <label class="col-6" id="TodayDate">2022/02/02</label>
+                </div>
+
+                <div class="container text-body-secondary border border-3 p-1 m-1">
+                    <div class="text-center  p-1" style="background-color:darkgreen; color:white;">
+                        Customer Details
+                    </div>
+
+                    <div class="form-group">
+                        <label>Customer ID</label>
+                        <select class="form-control col-7 mt-2" id="selectCusID">
+                            <option value="1">A</option>
+                            <option value="2">B</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-4 mt-2">Name</label>
+                        <input class="form-control col-7 mt-2" id="OrderCusName" readonly>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-4 mt-2">Address</label>
+                        <input class="form-control col-7 mt-2" id="OrderCusAddress" readonly>
+                    </div>
+                </div>
+            </div>
+
+            <!--ItemDetail-->
+            <div class=" col-lg-4 col-12 bg-body">
+                <div class="container text-body-secondary border border-3 p-1">
+                    <div class="text-center  p-1" style="background-color: darkgreen ; color:white;">
+                        Item Details
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 col-12">
+                            <div class="form-group">
+                                <label class="col-4 mt-2">Code</label>
+                                <select class="form-control col-7 mt-2" id="selectCode">
+                                    <option value="1">A</option>
+                                    <option value="2">B</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-4 mt-2">Name</label>
+                                <input class="form-control col-7 mt-2" id="OrderItemName" readonly>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-4 mt-2">QtyOnH.</label>
+                                <input class="form-control col-7 mt-2" id="OrderItemQtyOnH" readonly>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-12">
+                            <div class="form-group">
+                                <label class="col-4 mt-2">Price</label>
+                                <input class="form-control col-7 mt-2" id="OrderItemPrice" readonly>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-4 mt-2">OrderQty</label>
+                                <input class="form-control col-7 mt-2" id="OrderItemQty" type="number">
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-4 mt-2">Total</label>
+                                <input class="form-control col-7 mt-2" readonly id="TotalOfItem">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-end mt-3">
+                        <button class="btn btn-info" id="RemoveSelected" style=" color: white">Clear</button>
+                        <button class="btn btn-warning" id="addToCart" style=" color: white"> &nbsp;Add</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--placeOrder---------->
+            <div class="col-5  bg-body border border-3">
+                <div class="row justify-content-end">
+                    <div class="col-lg-6 col-md-6 col-sm-8">
+                        <div class="row align-items-center">
+                            <label class="col-sm-4 col-12 mt-2">Total</label>
+                            <div class="col-sm-8 col-12">
+                                <input class="form-control mt-2" id="total" readonly>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-end">
+                    <div class="col-lg-6 col-md-6 col-sm-8">
+                        <div class="row">
+                            <div class="col-4 mt-2">Discount</div>
+                            <div class="col-7">
+                                <input class="form-control mt-2" id="discount" type="number">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-sm-8">
+                        <div class="row">
+                            <div class="col-4 mt-2">Grand Total</div>
+                            <div class="col-7">
+                                <input class="form-control mt-2" id="grandTotal" readonly>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-end">
+                    <div class="col-lg-6 col-md-6 col-sm-8">
+                        <div class="row">
+                            <div class="col-4 mt-2">Cash</div>
+                            <div class="col-7">
+                                <input class="form-control mt-2" id="cash" type="number">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-sm-8">
+                        <div class="row">
+                            <div class="col-4 mt-2">Rest</div>
+                            <div class="col-7">
+                                <input class="form-control mt-2" id="rest" readonly>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-end">
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <button class="btn btn-success m-3" id="placeOrder"style="color: #ffffff;">Place Order</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-------Table----->
+            <div class="col-12 bg-body ">
+                <div class="table-responsive mt-2">
+                    <table class="table table-hover" id="cart">
+                        <thead class="table-success">
+                        <tr>
+                            <th scope="col">Item Code</th>
+                            <th scope="col">Item Name</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Qty</th>
+                            <th scope="col">Total</th>
+                        </tr>
+                        </thead>
+                        <tbody class="table-group-divider">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="col-lg-12 col-12  bg-body" >
+
+                <!----table----->
+                    <div class="table-responsive ">
+                        <table class="table table-hover" id="ordersTable">
+                            <thead class="table-success">
+                            <tr>
+                                <th scope="col">Order ID</th>
+                                <th scope="col">Date</th>
+                                <th scope="col">Customer ID</th>
+                                <th scope="col">Items ID(s)</th>
+                                <th scope="col">Discount</th>
+                                <th scope="col">Total</th>
+                            </tr>
+                            </thead>
+                            <tbody class="table-group-divider" id="tblOrders">
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+        </section>
+    </section>
+</main>
+
+<!------------------------------->
+<script src="assets/js/jquery-3.7.0.min.js"></script>
+
+<script src="db/DB.js"></script>
+
+<script src="model/Customer.js"></script>
+<script src="model/Item.js"></script>
+<script src="model/Orders.js"></script>
+<script src="model/OrderDetails.js"></script>
+
+<script src="controller/validations/CommonFunctions.js"></script>
+<script src="controller/validations/CustomerValidations.js"></script>
+<script src="controller/validations/ItemValidations.js"></script>
+<script src="controller/validations/OrderValidations.js"></script>
+
+<script src="controller/NavigationController.js"></script>
+<script src="controller/CustomerController.js"></script>
+<script src="controller/ItemController.js"></script>
+<script src="controller/OrderController.js"></script>
+<script src="controller/AllOrdersController.js"></script>
+
+
+
+</body>
+</html>

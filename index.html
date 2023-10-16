@@ -14,9 +14,120 @@
     <meta name="teme-colour" content="red">
     <link rel="icon" href="icon.png">
     <meta name="robots" content="index,follow">
-    <style>body{overflow-x: hidden;}</style>
+    <style>
+        body{overflow-x: hidden;}
+
+        #loader {
+            width: 100vw;
+            height: 100vh;
+            border: 1px solid white;
+            background: white;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        #loader > div {
+            width: 300px;
+            height: 300px;
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+
+        }
+
+
+
+        section:nth-child(9)>div > section > div:nth-child(1) {background-image: url("assests/images/pharmacy.png");background-size: cover;background-position: center;}
+        section:nth-child(9)>div > section > div:nth-child(2) {background-image: url("assests/images/ps4.png");background-size: cover;background-position: center;}
+        section:nth-child(9)>div > section > div:nth-child(3) {background-image: url("assests/images/pharm2.png");background-size: cover;background-position: center;}
+        section:nth-child(9)>div > section > div:nth-child(4) {background-image: url("assests/images/conect1.png");background-size: cover;background-position: center;}
+        section:nth-child(9)>div > section > div:nth-child(5) {background-image: url("assests/images/Screenshot (620).png");background-size: cover;background-position: center;}
+        section:nth-child(9)>div > section > div:nth-child(6) {background-image: url("assests/images/HSC5.png");background-size: cover;background-position: center;}
+        section:nth-child(9)>div > section > div:nth-child(7) {background-image: url("assests/images/HS1.png");background-size: cover;background-position: center;}
+        section:nth-child(9)>div > section > div:nth-child(8) {background-image: url("assests/images/HS2.png");background-size: cover;background-position: center;}
+        section:nth-child(9)>div > section > div:nth-child(9) {background-image: url("assests/images/HS3.png");background-size: cover;background-position: center;}
+        section:nth-child(9)>div > section > div:nth-child(10) {background-image: url("assests/images/ps4.png");background-size: cover;background-position: center;}
+        section:nth-child(9)>div > section > div:nth-child(11) {background-image: url("assests/images/spa1.png");background-size: cover;background-position: center;}
+        section:nth-child(9)>div > section > div:nth-child(12) {background-image: url("assests/images/Screenshot (620).png");background-size: cover;background-position: center;}
+
+
+
+        #waves>div {
+            position: absolute;
+            bottom: 0vw;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background: url("assests/images/waveMy8 (3).png");
+            background-size: 1000px 100px;
+            z-index: 10;
+
+        }
+
+        #waves>div:first-child {
+            z-index: 10;
+            /* opacity: 1; */
+            opacity: 0.8;
+            bottom: 0;
+            animation: animateWave 5s linear infinite;
+        }
+
+        #waves>div:nth-child(2) {
+            z-index: 9;
+            opacity: .7;
+            bottom: 0;
+            animation: animateWave2 4s linear infinite;
+        }
+
+        #waves>div:nth-child(3) {
+            z-index: 10;
+            opacity: .2;
+            bottom: 15px;
+            animation: animateWave 3s linear infinite;
+        }
+
+        #waves>div:last-child {
+            z-index: 9;
+            opacity: .5;
+            bottom: 20px;
+            animation: animateWave2 3s linear infinite;
+        }
+
+        @keyframes animateWave {
+            0% {
+                background-position-x: 1000px;
+            }
+
+            100% {
+                background-position-x: 0px;
+            }
+        }
+
+        @keyframes animateWave2 {
+            0% {
+                background-position-x: 0px;
+            }
+
+            100% {
+                background-position-x: 1000px;
+            }
+        }
+
+
+    </style>
+
     <link rel="stylesheet" href="assests/necolas.github.io_normalize.css_8.0.1_normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -106,10 +217,19 @@
 </head>
 
 <body>
+<!-------------------------------loder--------------------------------->
+
+<!--<section id="loader">-->
+<!--    <div></div>-->
+<!--</section>-->
+
+<div id="loading" id="loader" style="position: fixed; width: 100vw; height: 100vh; z-index: 80000; top: 0;bottom: 0;left: 0;right: 0;margin: auto">
+    <img src="assests/images/b8717641f46cdfdced2c86e984f07c11.gif" style="width: 100vw; height: 100vh" >
+</div>
 
 <!-------------------------------Header--------------------------------->
 
-<header>
+<header id="mainContent" style="display: none">
 
     <img src="assests/images/logo.png" style="width: 10%">
 
@@ -139,25 +259,25 @@
 
         <div>
 
-            <img  id="myImage" src="assests/images/Group%2033.png">
+            <img data-aos="fade-left" data-aos-delay="200" data-aos-duration="800" id="myImage" src="assests/images/Group%2033.png">
 
-            <h3 >Hi,I'm</h3>
-            <h4 >Gayara</h4>
+            <h3 data-aos="fade-right" data-aos-delay="200" data-aos-duration="800">Hi,I'm</h3>
+            <h4 data-aos="fade-right" data-aos-delay="200" data-aos-duration="800">Gayara</h4>
 
             <div ></div>
             <div ></div>
 
-            <h5 >Profetional Frontend Developer</h5>
+            <h5 data-aos="zoom-in" data-aos-delay="600" data-aos-duration="800" >Profetional Frontend Developer</h5>
 
-            <p >I'm a Frontend Developer in Sri Lanka and I'm very passionate and dedicad to my work</p>
+            <p  data-aos="zoom-in" data-aos-delay="600" data-aos-duration="800">I'm a Frontend Developer in Sri Lanka and I'm very passionate and dedicad to my work</p>
 
-            <h6 ><a href="#aboutMe" style="color: white; text-decoration: none">About Me</a></h6>
+            <h6 data-aos="zoom-in" data-aos-delay="600" data-aos-duration="800"><a href="#aboutMe" style="color: white; text-decoration: none">About Me</a></h6>
 
-            <img usemap="#LinkedInMap" id="linkedIn" src="assests/images/LinkedinIcon.png">
+            <img data-aos="zoom-in" data-aos-delay="600" data-aos-duration="800" usemap="#LinkedInMap" id="linkedIn" src="assests/images/LinkedinIcon.png">
 
-            <img  usemap="#githubMap" id="instergram" src="assests/images/gitHubIcon.png">
+            <img  data-aos="zoom-in" data-aos-delay="600" data-aos-duration="800" usemap="#githubMap" id="instergram" src="assests/images/gitHubIcon.png">
 
-            <img  usemap="#fbMap" id="facebook" src="assests/images/facebookIcon.png">
+            <img  data-aos="zoom-in" data-aos-delay="600" data-aos-duration="800"usemap="#fbMap" id="facebook" src="assests/images/facebookIcon.png">
 
             <map name="LinkedInMap">
                 <area shape="rect" coords="0,0,11.01,10.03" href="https://www.linkedin.com/in/movini-gayara-a745bb27b/?originalSubdomain=lk " alt="GO TO LinkedIn">
@@ -183,10 +303,10 @@
 
     <section id="expertise">
 
-        <h5 class="animate__animated animate__fadeIn animate__delay-1s  animate__repeat-2">Expertise</h5>
-        <h1 class="animate__animated animate__fadeIn  animate__delay-1s animate__repeat-2 " >What I DO</h1>
+        <h5 data-aos="zoom-out" data-aos-delay="0" data-aos-duration="800">Expertise</h5>
+        <h1 data-aos="zoom-out" data-aos-delay="0" data-aos-duration="800" >What I DO</h1>
 
-        <div  id="box1">
+        <div   id="box1">
             <img src="assests/images/lapDarkWhite.png">
             <h4 style="width: 15vw;">Desktop Application</h4>
             <h3>Create Modern Enterprise Application that reliable and consistency with awesome ideas</h3>
@@ -198,19 +318,19 @@
             <h3>Let the whole world know about your brand with a unique and performance-driven website.</h3>
         </div>
 
-        <div  id="box3">
+        <div   id="box3">
             <img src="assests/images/lapDarkWhite.png">
             <h4 style="width: 12vw;">UI / UX Designing</h4>
             <h3>Design is the main thing of a application. Pay more attention to the UI / UX part of the Software with eyecatching colors.</h3>
         </div>
 
-        <div  id="box4">
+        <div   id="box4">
             <img src="assests/images/lapDarkWhite.png">
             <h4 style="width: 12vw;">Graphic Designing</h4>
             <h3>The best designer can change everything in the artwork. I think graphic designers are like a magician in this field.</h3>
         </div>
 
-        <div  id="box5">
+        <div   id="box5">
             <img src="assests/images/AllDarkWhite.png">
             <h4 style="width: 8vw;">Drawing</h4>
             <h3>Creating different types of art.</h3>
@@ -229,13 +349,13 @@
     <section id="aboutMe">
 
 
-        <img id="section4MyImage2" src="assests/images/aboutImage.jpeg">
+        <img data-aos="zoom-out" data-aos-delay="0" data-aos-duration="800" id="section4MyImage2" src="assests/images/aboutImage.jpeg">
 
         <div >
 
-            <h5 class="animate__animated animate__fadeIn animate__delay-1s  animate__repeat-2">About Me</h5>
+            <h5 data-aos="zoom-out" data-aos-delay="0" data-aos-duration="800">About Me</h5>
 
-            <h1 class="animate__animated animate__fadeIn animate__delay-1s  animate__repeat-2">Hi, I'm Gayara </h1>
+            <h1 data-aos="zoom-out" data-aos-delay="0" data-aos-duration="800">Hi, I'm Gayara </h1>
 
             <h3>I'm Movini Gayara.I eager to learn new technologies and always willing to innnovate the new things witch can improve the existing technology.</h3>
 
@@ -249,8 +369,8 @@
 
     <section id="skills">
 
-        <h5 class="animate__animated animate__fadeIn animate__delay-1s  animate__repeat-2">Skills</h5>
-        <h1 class="animate__animated animate__fadeIn animate__delay-1s  animate__repeat-2">My Resume</h1>
+        <h5 data-aos="zoom-out" data-aos-delay="0" data-aos-duration="800">Skills</h5>
+        <h1 data-aos="zoom-out" data-aos-delay="0" data-aos-duration="800">My Resume</h1>
 
 <!--        <img id="pathImg" src="assests/images/Group%2039.png">-->
 
@@ -280,8 +400,8 @@
 
     <section>
 
-        <h5 class="animate__animated animate__fadeIn animate__delay-1s  animate__repeat-2" >Languages</h5>
-        <h1 class="animate__animated animate__fadeIn animate__delay-1s  animate__repeat-2" >What I Learnt</h1>
+        <h5 data-aos="zoom-out" data-aos-delay="0" data-aos-duration="800" >Languages</h5>
+        <h1 data-aos="zoom-out" data-aos-delay="0" data-aos-duration="800" >What I Learnt</h1>
 
         <img id="javaLogo" src="assests/images/LanJava.png">
         <img id="sqlLogo" src="assests/images/LanMySql.png">
@@ -302,14 +422,15 @@
 
     <section id="projects">
 
-        <h5>Portfolio</h5>
-        <h1>My Projects </h1>
+        <h5 data-aos="zoom-out" data-aos-delay="0" data-aos-duration="800">Portfolio</h5>
+        <h1 data-aos="zoom-out" data-aos-delay="0" data-aos-duration="800">My Projects </h1>
 
         <div></div>
 
         <img id="Project1" src="assests/images/ps4.png">
         <img id="Project2" src="assests/images/pharmacy.png">
         <img id="Project3" src="assests/images/HS1.png">
+
 
 <!--        <img id="LeftArrow" src="assests/images/LeftArrow.png">-->
 <!--        <img id="RightArrow" src="assests/images/RightArrow.png">-->
@@ -322,8 +443,8 @@
 
     <section id="Gallery">
 
-        <h5 class="animate__animated animate__fadeIn animate__delay-1s  animate__repeat-2">Gallery</h5>
-        <h1 class="animate__animated animate__fadeIn animate__delay-1s  animate__repeat-2">Visit My Blog</h1>
+        <h5 data-aos="zoom-out" data-aos-delay="0" data-aos-duration="800">Gallery</h5>
+        <h1 data-aos="zoom-out" data-aos-delay="0" data-aos-duration="800">Visit My Blog</h1>
 
         <img id="section8Img1" src="assests/images/gallery1.jpeg">
         <img id="section8Img2" src="assests/images/gallery3.JPG">
@@ -337,14 +458,32 @@
 
     <!------------------------------Gallery2-------------------------------->
 
-    <section></section>
+    <section>
+
+          <div>
+            <section>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </section>
+          </div>
+
+
+    </section>
 
     <!------------------------------contactMe-------------------------------->
 
     <section id="contactMe">
 
-        <h5 class="animate__animated animate__fadeIn animate__delay-1s  animate__repeat-2">Contact Me</h5>
-        <h1 class="animate__animated animate__fadeIn animate__delay-1s  animate__repeat-2">Contact Whith Me</h1>
+        <h5 data-aos="zoom-out" data-aos-delay="0" data-aos-duration="800">Contact Me</h5>
+        <h1 data-aos="zoom-out" data-aos-delay="0" data-aos-duration="800">Get In Touch Whith Me</h1>
 
         <div id="Contactdiv1">
 
@@ -418,9 +557,40 @@
 
     <footer>
 
+
+        <div id="waves">
+            <div> </div>
+            <div>  </div>
+            <div> </div>
+            <div> </div>
+        </div>
+
+
     </footer>
 
 </main>
+<script src="assignments/js/SPA/assests/jquery-3.7.1.min.js"></script>
+<script src="assignments/js/SPA/assests/bootsrap/js/bootstrap.bundle.js"></script>
+<script src="assests/js/js.js"></script>
+<script>
+    AOS.init();
+</script>
+<script>
+    // $(window).on('load',function (){
+    //     // $("#loader").css('display','none');
+    //     $("#loader").fadeOut(6000);
+    //     console.log("Window is fully loaded");
+    // });
+    //
+    $(window).on('load',function (){
+        $('#loading').css("display","none");
+        $('#mainContent').css("display","block");
+        $("#loader").fadeOut(8000);
+    });
+
+</script>
+
+</script>
 
 </body>
 

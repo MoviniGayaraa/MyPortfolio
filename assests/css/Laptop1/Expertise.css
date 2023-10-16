@@ -58,6 +58,7 @@ section:nth-child(3)>div{
 section:nth-child(3)>div:hover{
     background-color: black;
     transform: scale(1.02);
+    box-shadow:   #EF7418 0px 4px 12px;
 }
 
 section:nth-child(3)>div>h4{

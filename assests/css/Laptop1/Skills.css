@@ -110,6 +110,10 @@ section:nth-child(5)>div>h4:hover{
     top: 29vh;
     left: 14vw;
     margin: auto;
+    animation-name: anima;
+    animation-duration: 11s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 #section5Box2{
@@ -117,6 +121,11 @@ section:nth-child(5)>div>h4:hover{
     top: 46vh;
     right: 14vw;
     margin: auto;
+    animation-name: animati;
+    animation-duration: 11s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
 }
 
 #section5Box3{
@@ -124,6 +133,10 @@ section:nth-child(5)>div>h4:hover{
     top: 63vh;
     left: 14vw;
     margin: auto;
+    animation-name: anima;
+    animation-duration: 11s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 #section5Box4{
@@ -131,6 +144,38 @@ section:nth-child(5)>div>h4:hover{
     top: 79vh;
     right: 14vw;
     margin: auto;
+    animation-name: animati;
+    animation-duration: 11s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 
+@keyframes anima {
+    0%{
+        left: 14vw;
+    }
+
+    50%{
+        left: 16vw;
+
+    }
+    100%{
+        left: 12vw;
+    }
+}
+
+
+@keyframes animati {
+    0%{
+        right: 14vw;
+    }
+
+    50%{
+        right: 16vw;
+
+    }
+    100%{
+        right: 12vw;
+    }
+}

@@ -1,0 +1,68 @@
+section:nth-child(9){
+    position: relative;
+    height: 50vh;
+    width: 72vw;
+    padding-left: 14vw;
+    padding-right: 14vw;
+    background-color: black;
+}
+
+
+
+section:nth-child(9)>div {
+    width: 36vw;
+    height: 36vh;
+    border: 1px solid whitesmoke;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+section:nth-child(9)>div > section {
+    width: calc(100% * 12);
+    height: 100%;
+    display: flex;
+
+    animation-name: slide_me;
+    animation-duration: 14s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+section:nth-child(9)>div > section:hover{
+    animation-play-state: paused;
+
+}
+
+section:nth-child(9)>div > section > div {
+    flex-grow: 1;
+    height: 100%;
+}
+
+
+
+
+
+
+@keyframes slide_me {
+    0% {
+        transform: translateX(0px);
+    }
+    25% {
+        transform: translateX(calc((-100%/5)*1));
+    }
+    50% {
+        transform: translateX(calc((-100%/5)*2));
+    }
+    75% {
+        transform: translateX(calc((-100%/5)*3));
+    }
+    100% {
+        transform: translateX(calc((-100%/5)*4));
+    }
+
+}
